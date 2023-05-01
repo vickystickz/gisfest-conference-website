@@ -31,7 +31,7 @@ module.exports = {
 			],
 			h3: [
 				'2.353rem', //40px
-				'52px',
+				'54px',
 			],
 			h4: [
 				'1.765rem', //30px
@@ -119,6 +119,15 @@ module.exports = {
 				20: '#6D6E6E',
 				30: '#616162',
 			},
+		},
+		extend: {
+			backgroundImage: {
+				cardBgContour: "url('../public/assets/bg-contour.svg')",
+				fullscreenBgContour: "url('../public/assets/screen-bg-contour.png')",
+			},
+		},
+		boxShadow: {
+			primary: '0px 0px 42px -2px rgba(11, 17, 26, 0.12)',
 		},
 	},
 	plugins: [],
