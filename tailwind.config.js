@@ -6,11 +6,118 @@ module.exports = {
 		'./app/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
-		extend: {
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+		screens: {
+			mobile: '375px',
+			// => @media (min-width: 375px) { ... }
+			tablet: '768px',
+			// => @media (min-width: 768px) { ... }
+			laptop: '976px',
+			// => @media (min-width: 976px) { ... }
+			tvs: '1440px',
+			// => @media (min-width: 1440px) { ... }
+		},
+		fontFamily: {
+			sans: ['var(--font-montserrat)'],
+		},
+		fontSize: {
+			//[fontSize, lineHeight]
+			h1: [
+				'4.235rem', //72px
+				'94px',
+			],
+			h2: [
+				'3.176rem', //54px
+				'68px',
+			],
+			h3: [
+				'2.353rem', //40px
+				'52px',
+			],
+			h4: [
+				'1.765rem', //30px
+				'40px',
+			],
+			h5: [
+				'1.353rem', //23px
+				'38px',
+			],
+			body: [
+				'1.000rem', //17px
+				'24px',
+			],
+			//sm- small
+			'body-sm': [
+				'0.765rem', //13px
+				'18px',
+			],
+			//xm-extra small
+			'body-xm': [
+				'0.588rem', //10px
+				'18px',
+			],
+			//uls - ultra small
+			'body-uls': [
+				'0.412rem', //7px
+				'12px',
+			],
+		},
+		fontWeight: {
+			//p-primary
+			'p-regular': '400',
+			'p-medium': '500',
+			'p-semibold': '600',
+			'p-bold': '700',
+			//s-secondary
+			's-regular': '400',
+			's-medium': '500',
+			's-semibold': '600',
+		},
+		colors: {
+			//global colors
+			transparent: 'transparent',
+			black: '#000',
+			white: '#fff',
+			current: 'currentColor',
+			// bc - brand color
+			//yellow
+			yellow: {
+				0: '#F5A627',
+				10: '#F6AB33',
+				20: '#F7B54B',
+			},
+			//purple
+			purple: {
+				0: '#712C7D',
+				10: '#793884',
+				20: '#A36CAD',
+			},
+			//red
+			red: {
+				0: '#CE3573',
+				10: '#D1407B',
+				20: '#D7578B',
+			},
+			//green
+			green: {
+				0: '#206054',
+				10: '#2D695D',
+				20: '#52837A',
+			},
+
+			//sc - surface color
+			sc: {
+				0: '#0A0A0B',
+				10: '#141416',
+				20: '#222225',
+				30: '#3d3d43',
+			},
+
+			// tc - text color
+			tc: {
+				0: '#E4E4E5',
+				10: '#9E9E9F',
+				20: '#6D6E6E',
+				30: '#616162',
 			},
 		},
 	},
