@@ -1,6 +1,7 @@
 import ConferenceEdition from '@/components/ConferenceEdition';
 import SEO from '@/components/SEO';
-import GISfestIcon from '@/components/icons/GISFestIcon';
+import GISfestIcon from '@/components/icons/GISfestIcon';
+import VerifiedIcon from '@/components/icons/VerifiedIcon';
 import { ConferenceEditions } from '@/config/ConferenceEditions';
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
 				ogimage={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/assets/og-image.jpg`}
 			/>
 
-			<div className="flex h-[100vh] w-full flex-col gap-20 items-center justify-center laptop:bg-fullscreenBgContour laptop:bg-right-bottom laptop:bg-no-repeat">
+			<div className="flex p-10 w-full flex-col gap-20 items-center justify-center laptop:bg-fullscreenBgContour laptop:bg-right-bottom laptop:bg-no-repeat">
 				<div className="p-6 rounded-full shadow-primary">
 					<GISfestIcon />
 				</div>
@@ -27,6 +28,7 @@ export default function Home() {
 						url={edition.url}
 					/>
 				))}
+
 			</div>
 		</>
 	);

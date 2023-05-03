@@ -90,6 +90,7 @@ module.exports = {
 				0: '#712C7D',
 				10: '#793884',
 				20: '#A36CAD',
+				30: '#995CA4'
 			},
 			//red
 			red: {
@@ -102,6 +103,7 @@ module.exports = {
 				0: '#206054',
 				10: '#2D695D',
 				20: '#52837A',
+				30: '#AAF527'
 			},
 
 			//sc - surface color
@@ -125,6 +127,9 @@ module.exports = {
 				cardBgContour: "url('../public/assets/bg-contour.svg')",
 				fullscreenBgContour: "url('../public/assets/screen-bg-contour.png')",
 			},
+			backdropBlur: {
+				blur: '7.5px',
+			  }
 		},
 		boxShadow: {
 			primary: '0px 0px 42px -2px rgba(11, 17, 26, 0.12)',
