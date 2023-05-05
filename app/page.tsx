@@ -5,7 +5,7 @@ import { ConferenceEditions } from '@/config/editions';
 export default function Home() {
 	return (
 		<>
-			<div className="flex wrapper  p-10 w-full flex-col gap-20 items-center justify-center laptop:bg-fullscreenBgContour laptop:bg-right-bottom laptop:bg-no-repeat">
+			<div className="flex wrapper  p-10 w-full flex-col gap-20 items-center justify-center bg-fullscreenBgContour bg-right-bottom bg-no-repeat">
 				<div className="p-6 rounded-full shadow-primary">
 					<GISfestIcon />
 				</div>

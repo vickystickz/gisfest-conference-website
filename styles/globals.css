@@ -10,6 +10,6 @@
 
 @layer components {
 	.wrapper {
-		@apply mx-auto max-w-screen-tv  dark:bg-black h-screen;
+		@apply mx-auto max-w-screen-tv  h-screen;
 	}
 }

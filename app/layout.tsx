@@ -29,6 +29,32 @@ export const metadata: Metadata = {
 	keywords: ['GISfest', 'Conference', 'Geospatial'],
 	generator: 'Next.js',
 	creator: 'GISfest Tech Team',
-	robots: 'follow, index',
 	metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_FRONTEND_URL}`),
+	openGraph: {
+		title: 'Africa GISfestival Conference ',
+		description: 'Geospatial Conference for the Spatial People',
+		url: 'https://www.gisfest.org',
+		siteName: 'GISfest Conference Website',
+		locale: 'en-US',
+		type: 'website',
+	},
+	robots: {
+		index: false,
+		follow: true,
+		nocache: true,
+		googleBot: {
+			index: true,
+			follow: false,
+			noimageindex: true,
+			'max-video-preview': -1,
+			'max-image-preview': 'large',
+			'max-snippet': -1,
+		},
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Africa GISfestival Conference',
+		description: 'Geospatial Conference for the Spatial People',
+		creator: '@gis_fest',
+	},
 };
