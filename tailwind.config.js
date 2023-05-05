@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: [
-		'./pages/**/*.{js,ts,jsx,tsx}',
-		'./components/**/*.{js,ts,jsx,tsx}',
-		'./app/**/*.{js,ts,jsx,tsx}',
-	],
+	content: ['./components/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		screens: {
 			mobile: '375px',
@@ -13,7 +9,7 @@ module.exports = {
 			// => @media (min-width: 768px) { ... }
 			laptop: '976px',
 			// => @media (min-width: 976px) { ... }
-			tvs: '1440px',
+			tv: '1440px',
 			// => @media (min-width: 1440px) { ... }
 		},
 		fontFamily: {

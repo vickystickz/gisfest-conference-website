@@ -9,6 +9,7 @@ const LocationIcon = ({
 	<svg
 		width={width}
 		height={height}
+		fill="none"
 		viewBox="0 0 15 16"
 		xmlns="http://www.w3.org/2000/svg"
 	>

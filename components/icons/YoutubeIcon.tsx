@@ -10,6 +10,7 @@ const YoutubeIcon = ({
 		width={width}
 		height={height}
 		viewBox="0 0 72 24"
+		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		<path
