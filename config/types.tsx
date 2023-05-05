@@ -1,3 +1,4 @@
+import { SVGProps } from 'react';
 export type TConferenceEdition = {
 	hashtag: string;
 	location: string;
@@ -5,3 +6,11 @@ export type TConferenceEdition = {
 	active: boolean;
 	url: string;
 };
+
+export interface TSVGProps extends SVGProps<SVGSVGElement> {
+	width: string | number;
+	height: string | number;
+	fillColor?: string;
+	strokeColor?: string;
+	strokeWidth?: string | number;
+}

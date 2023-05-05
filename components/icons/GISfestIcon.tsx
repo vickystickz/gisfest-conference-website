@@ -1,8 +1,4 @@
-import { SVGProps } from 'react';
-
-interface Props extends SVGProps<SVGSVGElement> {}
-
-const GISfestIcon = (props: Props) => (
+const GISfestIcon = () => (
 	<svg
 		width="76"
 		height="78"
