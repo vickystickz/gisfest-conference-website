@@ -1,26 +1,25 @@
-import { SVGProps } from "react";
+import { TSVGProps } from '@/config/types';
 
-interface Props extends SVGProps<SVGSVGElement> {
-
-}
-
-const ArrowUpIcon = (props: Props) => (
-  <svg
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <path
-      d="M17 7L7 17M17 7H8M17 7V16"
-      stroke="#79717A"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+const ArrowUpIcon = ({
+	width,
+	height,
+	strokeWidth,
+	strokeColor = 'currentColor',
+}: TSVGProps) => (
+	<svg
+		width={width}
+		height={height}
+		viewBox="0 0 24 24"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M17 7L7 17M17 7H8M17 7V16"
+			stroke={strokeColor}
+			strokeWidth={strokeWidth}
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		/>
+	</svg>
 );
 
-export  default ArrowUpIcon ;
+export default ArrowUpIcon;

@@ -1,8 +1,7 @@
 import ConferenceEdition from '@/components/ConferenceEdition';
 import SEO from '@/components/SEO';
 import GISfestIcon from '@/components/icons/GISfestIcon';
-import VerifiedIcon from '@/components/icons/VerifiedIcon';
-import { ConferenceEditions } from '@/config/ConferenceEditions';
+import { ConferenceEditions } from '@/config/editions';
 
 export default function Home() {
 	return (
@@ -28,7 +27,6 @@ export default function Home() {
 						url={edition.url}
 					/>
 				))}
-
 			</div>
 		</>
 	);
