@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@layer components {
+	.wrapper {
+		@apply mx-auto max-w-screen-tv  h-screen;
+	}
 }
