@@ -29,3 +29,27 @@ export type TSponsorCard = {
 		website: string;
 	};
 };
+
+export enum AgendaCategory {
+	workshop = 'workshop',
+	panelSession = 'Panel Session',
+	Keynote = 'Keynote',
+}
+
+export type TAgendaCard = {
+	category?: AgendaCategory;
+	time: string;
+
+	title: string;
+	speakers?: {
+		name: string;
+	}[];
+};
+
+export type TAgenda = {
+	name: string;
+	id: number;
+	day: string;
+	date: string;
+	agenda: TAgendaCard[];
+};

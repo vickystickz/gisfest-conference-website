@@ -12,4 +12,11 @@
 	.wrapper {
 		@apply mx-auto max-w-screen-tv  h-screen px-4;
 	}
+
+	.tag-padding {
+		@apply px-[12px] py-[6px];
+	}
+	.border-gradient {
+		@apply bg-gradient-to-tr from-yellow-0 via-purple-30 to-red-0;
+	}
 }
