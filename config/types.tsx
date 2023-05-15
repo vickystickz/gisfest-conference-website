@@ -14,3 +14,18 @@ export interface TSVGProps extends SVGProps<SVGSVGElement> {
 	strokeColor?: string;
 	strokeWidth?: string | number;
 }
+
+export enum SponsorCategory {
+	Platinum = 'Platinum',
+	Diamond = 'Diamond',
+	Silver = 'Silver',
+}
+export type TSponsorCard = {
+	sponsor: {
+		category: SponsorCategory;
+		logo: string;
+		companyName: string;
+		confirmed: boolean;
+		website: string;
+	};
+};
