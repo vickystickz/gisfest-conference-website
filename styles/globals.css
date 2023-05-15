@@ -10,7 +10,7 @@
 
 @layer components {
 	.wrapper {
-		@apply mx-auto max-w-screen-tv  h-screen px-4;
+		@apply mx-auto max-w-screen-tv  h-screen w-[96%];
 	}
 
 	.tag-padding {

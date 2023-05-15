@@ -3,8 +3,8 @@ import { AgendaCategory, TAgendaCard } from '@/config/types';
 type ExtendedAgendaCard = { selectedTimezone: string; agenda: TAgendaCard };
 const AgendaCard = ({ selectedTimezone, agenda }: ExtendedAgendaCard) => {
 	return (
-		<div className="odd:border-gradient rounded-3xl p-[0.1rem]">
-			<div className="bg-sc-20 w-full rounded-3xl space-y-2 p-8 cursor-pointer ">
+		<div className=" odd:border-gradient rounded-3xl p-[0.1rem]">
+			<div className="bg-sc-20  rounded-3xl space-y-2 p-3 laptop:p-6 cursor-pointer ">
 				<p className="text-tc-10 text-body-sm tablet:text-body font-p-medium">
 					{agenda.time}
 				</p>
@@ -19,7 +19,7 @@ const AgendaCard = ({ selectedTimezone, agenda }: ExtendedAgendaCard) => {
 							{agenda.speakers?.map((speaker, id) => (
 								<p
 									key={`speaker-${id}`}
-									className="text-tc-10 text-body font-p-semibold"
+									className="text-tc-10 whitespace-nowrap text-body font-p-semibold"
 								>
 									{speaker.name}
 								</p>
@@ -28,7 +28,7 @@ const AgendaCard = ({ selectedTimezone, agenda }: ExtendedAgendaCard) => {
 						<p
 							className={` p-2 ${getAgendaCategoryStyle(
 								agenda?.category
-							)} self-end rounded-xl text-body-sm text-sc-10 font-p-medium tag-padding`}
+							)} self-end rounded-xl whitespace-nowrap text-body-sm text-sc-10 font-p-medium tag-padding`}
 						>
 							{agenda.category}
 						</p>
