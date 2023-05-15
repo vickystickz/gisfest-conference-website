@@ -8,8 +8,20 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Clash Display';
+	src: url('../public/assets/font/ClashDisplay/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf');
+	src: url('../public/assets/font/ClashDisplay/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+:root{
+	--font-clash-display: 'Clash Display'
+}
+
 @layer components {
 	.wrapper {
-		@apply mx-auto max-w-screen-tv  h-screen px-4;
+		@apply mx-auto max-w-screen-tv  h-screen px-3;
 	}
 }

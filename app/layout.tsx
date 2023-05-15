@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={`${montserrat.variable} font-sans`}>
-			<body className="bg-black">{children}</body>
+			<body className="bg-sc-0">{children}</body>
 		</html>
 	);
 }

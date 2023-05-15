@@ -1,71 +1,16 @@
-import LogoWhite from '@/public/assets/logos/logo-white.svg';
+import { siteConfiguration} from '@/config/siteConfig'
 import SponsorCard from './SponsorCard';
-import { SponsorCategory } from '@/config/types';
 import SectionHeader from '../shared/SectionHeader';
 import Link from 'next/link';
 
 //todo-- going to config @vickystickz
+//done @jeafrezy
 
-const sponsors = [
-	{
-		category: SponsorCategory.Diamond,
-		logo: LogoWhite,
-		companyName: 'Mapbox',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Platinum,
-		logo: LogoWhite,
-		companyName: 'Spatialnode',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-];
 
-export default function Sponsors() {
+
+export default function Sponsors() { 
+	const { sponsors } = siteConfiguration
+
 	return (
 		<div className="flex flex-col gap-10">
 			<SectionHeader
