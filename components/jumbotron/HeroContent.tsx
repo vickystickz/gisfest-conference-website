@@ -10,22 +10,22 @@ type THeroContent = {
 
 const HeroContent = ({ conference, buttons}: THeroContent) => {
   return (
-    <div className='z-20 flex-grow flex flex-col gap-24 relative px-24 w-[70rem] mt-32'>
-        <div className="flex flex-col gap-8">
+    <div className='z-20 flex-grow flex flex-col gap-[15%] tablet:gap-12  w-full relative h-full laptop:mt-[3%] tablet:mt-[3%] px-6 laptop:px-24 tablet:px-14 max-w-screen-tv mx-auto'>
+        <div className="flex flex-col gap-[2rem]">
             <div className="flex gap-8">
                 <HeroText text={`GISfest ${conference.year}`}/>
                 <HeroText text={conference.edition}/>
             </div>
-            <h1 className="text-h1 text-white font-clashDisplay font-p-semibold ">
+            <h1 className="laptop:text-h1 tablet:text-h2 text-h4 laptop:leading-[92px] laptop:max-w-[770px] tablet:w-[70%] w-[90%] text-white font-clashDisplay laptop:font-p-semibold font-p-medium ">
                 {conference.title}
             </h1>
-            <div className="flex gap-8">
+            <div className="flex flex-col laptop:flex-row tablet:flex-row gap-8">
                 <HeroLocation text={conference.date} showLocationIcon={false} />
                 <HeroLocation text={conference.location} showLocationIcon={true} />
             </div>
-            <h5 className="text-h5 text-tc-0 laptop:w-[681px]">{conference.description}</h5>
+            <h5 className="laptop:text-h5 text-body leading-6 text-tc-0 laptop:w-[681px] tablet:w-[60%]">{conference.description}</h5>
         </div>
-        <div className="flex items-center gap-[42px]">
+        <div className="flex laptop:flex-row tablet:flex-row flex-col items-center z-0 relative gap-[42px] tablet:w-[500px]">
             {
                 buttons.map((button, index) => {
                     return  index === 1 ? (

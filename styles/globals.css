@@ -22,6 +22,25 @@
 
 @layer components {
 	.wrapper {
-		@apply mx-auto max-w-screen-tv  h-screen px-3;
+		@apply mx-auto max-w-screen-tv laptop:px-24 tablet:px-14 laptop:space-y-[107px] space-y-[57px] px-3;
 	}
 }
+
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      .stroked-text {
+       -webkit-text-stroke: 1.4px #9E9E9F; /* Stroke width and color */
+       -webkit-text-fill-color: transparent; /* Ensures text color is applied */
+     } 
+    }
+  }
