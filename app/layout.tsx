@@ -13,8 +13,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${montserrat.variable} font-sans`}>
-			<body className="bg-black">{children}</body>
+		<html lang="en" className={`${montserrat.variable} font-sans scroll-smooth`}>
+			<body className="bg-sc-0">{children}</body>
 		</html>
 	);
 }
