@@ -1,3 +1,6 @@
+import SpatialPeople from '@/components/SpatialPeople';
+import Agenda from '@/components/agenda/Agenda';
+import Venue from '@/components/venue/Venue';
 import About from '@/components/about/About';
 import ConferenceType from '@/components/conferenceType/ConferenceType';
 import FAQ from '@/components/faq/FAQ';
@@ -5,11 +8,12 @@ import Jumbotron from '@/components/jumbotron/Jumbotron';
 import MarqueeText from '@/components/marquee/MarqueeText';
 import Sponsors from '@/components/sponsors/Sponsors';
 import TakeAway from '@/components/takeAway/TakeAway';
+
 export default function Home() {
 	return (
 		<>
 			<Jumbotron/>
-			<div className="wrapper relative">
+			<div className="wrapper grid gap-y-10 ">
 				<section id="#conferenceType">
 					<ConferenceType/>
 				</section>
@@ -24,11 +28,19 @@ export default function Home() {
 				</section>
 			</div>
 			<MarqueeText />
-			<div className="wrapper">
+			<div className="wrapper grid gap-y-10 ">
 				<section id="#sponsors">
 					<Sponsors />
 				</section>
+				<section id="#agenda">
+					<Agenda />
+				</section>
+				<SpatialPeople />
+				<section id="#venue">
+					<Venue />
+				</section>
 			</div>
+			
 		</>
 	);
 }

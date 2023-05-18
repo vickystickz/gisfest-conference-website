@@ -12,7 +12,7 @@ export default function Sponsors() {
 	const { sponsors } = siteConfiguration
 
 	return (
-		<div className="flex flex-col gap-10">
+		<div className="flex flex-col gap-y-10 ">
 			<SectionHeader
 				title="Sponsor"
 				paragraph="Organizations that contributed to the achievement of GISfest"
@@ -33,7 +33,7 @@ export default function Sponsors() {
 					<Link
 						href={'https://downloadurl.come'}
 						title="Download sponsorship deck"
-						className="p-2 tablet:p-4 text-h5 whitespace-nowrap text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
+						className="p-2 tablet:p-4 text-h5 text-left tablet:text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
 					>
 						Download sponsorship deck
 					</Link>
