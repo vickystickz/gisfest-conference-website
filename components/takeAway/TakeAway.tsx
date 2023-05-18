@@ -31,7 +31,7 @@ const TakeAway = () => {
                 return (
                   <li
                     key={index}
-                    className={`cursor-pointer text-h5 h-[32px] transition-all delay-150 ease-in-out font-clashDisplay ${
+                    className={`cursor-pointer laptop:text-h5 text-body h-[32px] transition-all delay-150 ease-in-out font-clashDisplay ${
                       takeAway.title === activeTitle
                         ? "border-b-[1px] text-tc-0 "
                         : "text-tc-10"
@@ -58,7 +58,7 @@ const TakeAway = () => {
               takeAway.title === activeTitle && (
                 <p
                   key={index}
-                  className="w-[500px] laptop:text-h5 text-body text-tc-0"
+                  className="laptop:w-[500px] tablet:w-[500px] w-full  laptop:text-h5 text-body text-tc-0"
                 >
                   {takeAway.decription}
                 </p>

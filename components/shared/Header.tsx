@@ -52,7 +52,7 @@ const Header = () => {
     const year = new Date().getFullYear();
 
   return (
-    <header className={`grid z-30 transition-all delay-150 ease-in-out ${isScrolled ? "fixed laptop:left-0 laptop:right-0 backdrop-blur-blur ": null} ${showMobileMenu && "h-full"} w-full laptop:grid-cols-12 laptop:max-w-screen-tv mx-auto grid-cols-2 laptop:items-center laptop:px-24 px-6 laptop:py-[22px] tablet:px-14 py-4`}>
+    <header className={`grid z-30 transition-all delay-150 ease-in-out ${isScrolled ? "fixed laptop:left-0 laptop:right-0 backdrop-blur-blur ": null} ${showMobileMenu && "h-full"} w-full laptop:grid-cols-12 laptop:max-w-screen-tv mx-auto grid-cols-2 laptop:items-center laptop:px-24 px-3 laptop:py-[22px] tablet:px-14 py-4`}>
       <div className="laptop:col-span-2 col-span-1 z-40 relative">
         <a href={header.conferenceLogo.route}>
           <Image src={header.conferenceLogo.logo} alt="logo" />
@@ -86,7 +86,7 @@ const Header = () => {
                     text={button.text}
                     route={button.route}
                     showArrow={true}
-                    bgColor={"white"}
+                    bgColor={"bg-white"}
                     textColor={"sc-20"}
                     borderStyle={'font-p-semibold'}
                   />
@@ -96,7 +96,7 @@ const Header = () => {
                     text={button.text}
                     route={button.route}
                     showArrow={false}
-                    bgColor={"sc-20"}
+                    bgColor={"bg-black"}
                     textColor={"white"}
                     borderStyle={'border-[1px] border-tc-30 font-p-semibold'}
                   />

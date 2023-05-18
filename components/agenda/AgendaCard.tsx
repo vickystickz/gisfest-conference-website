@@ -3,7 +3,7 @@ import { AgendaCategory, TAgendaCard } from '@/config/types';
 type ExtendedAgendaCard = { selectedTimezone: string; agenda: TAgendaCard };
 const AgendaCard = ({ selectedTimezone, agenda }: ExtendedAgendaCard) => {
 	return (
-		<div className=" odd:border-gradient rounded-3xl p-[0.1rem]">
+		<div className=" col-span-1 odd:border-gradient rounded-3xl p-[0.1rem]">
 			<div className="bg-sc-20  rounded-3xl space-y-2 p-3 laptop:p-6 cursor-pointer ">
 				<p className="text-tc-10 text-body-sm tablet:text-body font-p-medium">
 					{agenda.time}
