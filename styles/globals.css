@@ -22,7 +22,16 @@
 
 @layer components {
 	.wrapper {
-		@apply mx-auto max-w-screen-tv laptop:px-24 tablet:px-14 laptop:space-y-[107px] space-y-[57px] px-3;
+	
+    @apply mx-auto max-w-screen-tv laptop:px-24 tablet:px-14 laptop:space-y-[107px] space-y-[57px] px-3;
+	}
+
+	.tag-padding {
+		@apply px-[12px] py-[6px];
+	}
+	.border-gradient {
+		@apply bg-gradient-to-tr from-yellow-0 via-purple-30 to-red-0;
+		
 	}
 }
 

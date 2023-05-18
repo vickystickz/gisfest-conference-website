@@ -1,6 +1,6 @@
 type TSectionHeader = {
 	title: string;
-	paragraph: string;
+	paragraph?: string;
 };
 
 export default function SectionHeader({ title, paragraph }: TSectionHeader) {
