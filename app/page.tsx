@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<Jumbotron/>
-			<div className="wrapper grid gap-y-10 ">
+			<div className="wrapper ">
 				<section id="#conferenceType">
 					<ConferenceType/>
 				</section>
@@ -28,7 +28,7 @@ export default function Home() {
 				</section>
 			</div>
 			<MarqueeText />
-			<div className="wrapper grid gap-y-10 ">
+			<div className="wrapper ">
 				<section id="#sponsors">
 					<Sponsors />
 				</section>

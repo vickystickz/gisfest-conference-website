@@ -30,10 +30,10 @@ const HeroContent = ({ conference, buttons}: THeroContent) => {
                 buttons.map((button, index) => {
                     return  index === 1 ? (
                     button.isActive &&
-                        <Button  key={index} text={button.text} route={button.route} showArrow={false} bgColor={'sc-0'} textColor={`tc-0`} borderStyle={'border-[1px] border-tc-30 font-clashDisplay font-p-medium'} />
+                        <Button  key={index} text={button.text} route={button.route} showArrow={false} bgColor={'bg-sc-0'} textColor={`tc-0`} borderStyle={'border-[1px] border-tc-30 font-clashDisplay font-p-medium'} />
                     ): (
                         button.isActive &&
-                        <Button  key={index} text={button.text} route={button.route} showArrow={true} bgColor={'white'} textColor={`sc-20`} borderStyle={'font-clashDisplay font-p-semibold '} />
+                        <Button  key={index} text={button.text} route={button.route} showArrow={true} bgColor={'bg-white'} textColor={`sc-20`} borderStyle={'font-clashDisplay font-p-semibold '} />
                     )
                 })
             }

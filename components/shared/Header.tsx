@@ -86,7 +86,7 @@ const Header = () => {
                     text={button.text}
                     route={button.route}
                     showArrow={true}
-                    bgColor={"white"}
+                    bgColor={"bg-white"}
                     textColor={"sc-20"}
                     borderStyle={'font-p-semibold'}
                   />
@@ -96,7 +96,7 @@ const Header = () => {
                     text={button.text}
                     route={button.route}
                     showArrow={false}
-                    bgColor={"sc-20"}
+                    bgColor={"bg-black"}
                     textColor={"white"}
                     borderStyle={'border-[1px] border-tc-30 font-p-semibold'}
                   />
