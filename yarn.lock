@@ -1895,6 +1895,11 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-ui-scrollspy@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/react-ui-scrollspy/-/react-ui-scrollspy-2.3.0.tgz"
+  integrity sha512-Z4oEFSdwyHYYWo8deOtKSPvdZXkTUUFSkM/Rnww4jiRlBMyubXf5OBauWC0Y0w/w6VTyMlCuZwRKxrrc5khUFg==
+
 react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>= 16.8.0 || 18.0.0", react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"

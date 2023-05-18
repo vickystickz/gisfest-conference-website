@@ -5,7 +5,6 @@ import Jumbotron from '@/components/jumbotron/Jumbotron';
 import MarqueeText from '@/components/marquee/MarqueeText';
 import Sponsors from '@/components/sponsors/Sponsors';
 import TakeAway from '@/components/takeAway/TakeAway';
-
 export default function Home() {
 	return (
 		<>
@@ -14,7 +13,7 @@ export default function Home() {
 				<section id="#conferenceType">
 					<ConferenceType/>
 				</section>
-				<section id="#about" className=''>
+				<section id="#about" >
 					<About />	
 				</section>
 				<section id='#takeaway'>

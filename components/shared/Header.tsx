@@ -6,6 +6,7 @@ import Image from "next/image";
 import Button from "./Button";
 import MenuIcon from "../icons/MenuIcon";
 import CloseIcon from "../icons/CloseIcon";
+import Link from "next/link";
 
 
 const Header = () => {
@@ -64,11 +65,13 @@ const Header = () => {
               return (
                 link.isActive &&
                 <li key={index} className=" px-4 py-3">
-                  <a href={link.route} className=" text-white font-p-semibold"
-                  onClick={handleMobileMenu}
+                  <Link  href={link.route}  className=" text-white font-p-semibold"
+                  onClick={()=>{setShowMobileMenu(false)
+                    document.body.style.overflow = 'unset';
+                  } }
                   >
                     {link.text}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
