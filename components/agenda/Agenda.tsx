@@ -234,7 +234,7 @@ const Agenda = () => {
 	return (
 		<div className="flex flex-col gap-10 w-full">
 			<SectionHeader title="Agenda" />
-			<div className="flex gap-6 tablet:gap-10  flex-col-reverse laptop:flex-row p-2 justify-between items-center sticky  top-0 backdrop-blur-2xl">
+			<div className="flex gap-6 tablet:gap-10  flex-col-reverse laptop:flex-row p-2 justify-between items-center sticky  top-10 backdrop-blur-2xl">
 				{/* Web  */}
 				<div className="flex w-full justify-between">
 					<div className="flex items-center space-x-2  tablet:space-x-10 font-p-semibold">
