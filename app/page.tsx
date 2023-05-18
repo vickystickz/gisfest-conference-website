@@ -1,4 +1,3 @@
-
 import SpatialPeople from '@/components/SpatialPeople';
 import Agenda from '@/components/agenda/Agenda';
 import Venue from '@/components/venue/Venue';
@@ -15,7 +14,6 @@ export default function Home() {
 		<>
 			<Jumbotron/>
 			<div className="wrapper grid gap-y-10 ">
-			<div className="wrapper relative ">
 				<section id="#conferenceType">
 					<ConferenceType/>
 				</section>
@@ -30,7 +28,8 @@ export default function Home() {
 				</section>
 			</div>
 			<MarqueeText />
-          <section id="#sponsors">
+			<div className="wrapper grid gap-y-10 ">
+				<section id="#sponsors">
 					<Sponsors />
 				</section>
 				<section id="#agenda">
@@ -40,6 +39,7 @@ export default function Home() {
 				<section id="#venue">
 					<Venue />
 				</section>
+			</div>
 			
 		</>
 	);
