@@ -1,73 +1,18 @@
-import LogoWhite from '@/public/assets/logos/logo-white.svg';
+import { siteConfiguration} from '@/config/siteConfig'
 import SponsorCard from './SponsorCard';
-import { SponsorCategory } from '@/config/types';
 import SectionHeader from '../shared/SectionHeader';
 import Link from 'next/link';
 
 //todo-- going to config @vickystickz
+//done @jeafrezy
 
-const sponsors = [
-	{
-		category: SponsorCategory.Diamond,
-		logo: LogoWhite,
-		companyName: 'Mapbox',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Platinum,
-		logo: LogoWhite,
-		companyName: 'Spatialnode',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-	{
-		category: SponsorCategory.Silver,
-		logo: LogoWhite,
-		companyName: 'Esri',
-		confirmed: false,
-		website: 'https://x.com',
-	},
-];
 
-export default function Sponsors() {
+
+export default function Sponsors() { 
+	const { sponsors } = siteConfiguration
+
 	return (
-		<div className="flex flex-col gap-10">
+		<div className="flex flex-col gap-y-10 ">
 			<SectionHeader
 				title="Sponsor"
 				paragraph="Organizations that contributed to the achievement of GISfest"
@@ -79,7 +24,7 @@ export default function Sponsors() {
 			</div>
 			<div className="flex flex-col tablet:flex-row gap-10 w-full tablet:p-6 laptop:p-20 ">
 				<div className="tablet:basis:1/2 laptop:basis-1/3  p-2">
-					<h1 className="font-p-semibold text-h4 text-tc-10">
+					<h1 className="font-p-semibold font-clashDisplay laptop:text-h4 tablet:text-h4 text-h5 text-tc-10">
 						Be part of the GISfest 2023 experience and lets make history
 						together.
 					</h1>
@@ -88,7 +33,7 @@ export default function Sponsors() {
 					<Link
 						href={'https://downloadurl.come'}
 						title="Download sponsorship deck"
-						className="p-2 tablet:p-4 text-h5 whitespace-nowrap text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
+						className="py-[14px] px-6 tablet:p-4 laptop:text-h5 tablet:text-h5 font-clashDisplay text-body whitespace-nowrap text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
 					>
 						Download sponsorship deck
 					</Link>
