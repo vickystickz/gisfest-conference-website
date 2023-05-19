@@ -15,6 +15,7 @@ export default function Sponsors() {
 		<div className="flex flex-col gap-y-10 ">
 			<SectionHeader
 				title="Sponsor"
+				layout='text-center'
 				paragraph="Organizations that contributed to the achievement of GISfest"
 			/>
 			<div className="gap-[10px] tablet:gap-8 grid grid-cols-2 tablet:grid-cols-3  laptop:grid-cols-4 grid-flow-row ">

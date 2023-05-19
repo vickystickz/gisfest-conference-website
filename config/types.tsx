@@ -1,4 +1,4 @@
-import { type } from 'os';
+import { StaticImageData } from 'next/image';
 import { SVGProps } from 'react';
 export type TConferenceEdition = {
 	hashtag: string;
@@ -7,6 +7,21 @@ export type TConferenceEdition = {
 	active: boolean;
 	url: string;
 };
+
+export type TSiteConfiguration = {
+	header: THeader['header'],
+	conferenceType: TConferenceType,
+	jumbotron: TJumbotron,
+	about: TAbout,
+	takeAway: TtakeAwayInfo[],
+	faq: TFaqInfo[],
+	marqueeText: string,
+	sponsors: TSponsorCard['sponsor'][],
+	agenda: TAgenda[],
+	venueImages: veneueImage[],
+	teams: Tteams[],
+	teamDescription: string[],
+}
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {
 	width: string | number;
@@ -22,9 +37,31 @@ export enum SponsorCategory {
 	Silver = 'Silver',
 }
 
+export type TConferenceType = {
+	title: string;
+	question: string;
+	picture: string;
+}
+
+export type TAbout = {
+	description: Array<string>;
+}
+
+
+export type TFaqInfo = {
+	question: string;
+	answer: string;
+}
+
+
+export type TtakeAwayInfo = {
+	title: string;
+	description: string;
+}
+
 export type TSponsorCard = {
 	sponsor: {
-		category: SponsorCategory;
+		category: string;
 		logo: string;
 		companyName: string;
 		confirmed: boolean;
@@ -37,6 +74,10 @@ export enum AgendaCategory {
 	workshop = 'workshop',
 	panelSession = 'Panel Session',
 	Keynote = 'Keynote',
+}
+export enum TeamCategory {
+	Organizing = 'Organizing',
+	Volunteers = 'Volunteers',
 }
 
 export type TAgendaCard = {
@@ -63,9 +104,14 @@ export type navigationLinks = {
 	isActive: boolean;
 }
 
+export type veneueImage = {
+	path: StaticImageData,
+	alt: string
+}
+
 export type conferenceLogo = {
 	route: string,
-	logo: string
+	logo: StaticImageData
 }
 
 
@@ -75,6 +121,18 @@ export type THeader = {
 		navigationLinks: navigationLinks[];
 		navigationButtons: navigationLinks[];
 	}
+}
+
+export type Tteams = {
+	category: string,
+	teamMembers: teamMembers[]
+}
+
+export type teamMembers = {
+	fullName: string,
+	twitter: string,
+	linkedIn: string,
+	teamName: string,
 }
 
 export type conference = {
@@ -88,7 +146,7 @@ export type conference = {
 
 
 export type TJumbotron = {
-	heroIMage: string,
+	heroImage: StaticImageData,
 	conference: conference,
 	heroButtons: navigationLinks[]
 

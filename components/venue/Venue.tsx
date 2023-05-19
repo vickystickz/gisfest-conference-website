@@ -3,15 +3,12 @@ import VenueImageOne from '@/public/assets/images/venue/image1.png';
 import VenueImageThree from '@/public/assets/images/venue/image3.png';
 import VenueImageTwo from '@/public/assets/images/venue/image2.png';
 import Image from 'next/image';
-const venueImages = [
-	{ path: VenueImageOne, alt: 'Image One' },
-	{ path: VenueImageThree, alt: 'Image One' },
-	{ path: VenueImageTwo, alt: 'Image One' },
-];
+import { siteConfiguration } from '@/config/siteConfig';
 export default function Venue() {
+	const { venueImages } = siteConfiguration;
 	return (
 		<div className="flex flex-col tablet:flex-row gap-10  ">
-			<div className="flex flex-col gap-10 text-tc-0 basis-1/3 p-2">
+			<div className="flex flex-col gap-10 justify-center text-tc-0 basis-1/3 p-2">
 				<button className="rounded-xl border-gradient p-[0.1rem] self-start">
 					<span className="block bg-sc-20 p-3 text-body font-p-semibold rounded-xl">
 						Venue
@@ -30,12 +27,14 @@ export default function Venue() {
 					Learn more
 				</Link>
 			</div>
-			<div className="basis-2/3 grid  grid-cols-2 first:col-span-2  grid-rows-2 gap-10">
+			<div className="basis-2/3 grid grid-cols-5 laptop:gap-10 gap-4">
 				{venueImages.map((image, id) => (
-					<div key={`venue-image-${id}`}>
-						<Image src={image.path} alt={image.alt} />
-					</div>
-				))}
+							<div key={`venue-image-${id}`} className={`w-full ${id === 0 ? "col-span-5": id === 1? "col-span-3": "col-span-2"} `} >
+								<Image src={image.path} alt={image.alt} className='h-full w-full object-fill' />
+							</div>
+					)
+					
+			)}
 			</div>
 		</div>
 	);

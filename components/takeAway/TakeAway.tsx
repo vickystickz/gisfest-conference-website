@@ -60,7 +60,7 @@ const TakeAway = () => {
                   key={index}
                   className="laptop:w-[500px] tablet:w-[500px] w-full  laptop:text-h5 text-body text-tc-0"
                 >
-                  {takeAway.decription}
+                  {takeAway.description}
                 </p>
               )
             );

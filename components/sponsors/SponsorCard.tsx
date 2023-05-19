@@ -34,7 +34,7 @@ const SponsorCard = ({ sponsor }: TSponsorCard) => {
 
 export default SponsorCard;
 
-function getCategoryStyle(category: SponsorCategory) {
+function getCategoryStyle(category: string) {
 	if (category === SponsorCategory.Platinum) {
 		return 'text-yellow-20';
 	} else if (category === SponsorCategory.Diamond) {
