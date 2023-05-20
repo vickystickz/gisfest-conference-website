@@ -21,6 +21,7 @@ export type TSiteConfiguration = {
 	venueImages: veneueImage[],
 	teams: Tteams[],
 	teamDescription: string[],
+	speakers: TConferenceSpeaker['speaker'][],
 }
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {
@@ -152,3 +153,14 @@ export type TJumbotron = {
 
 }
 
+export type TConferenceSpeaker = {
+	speaker: {
+		name: string;
+		role: string;
+		avatar: string;
+		company: string;
+		sociallink: string;
+
+	};
+
+};
