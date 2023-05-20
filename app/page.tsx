@@ -8,6 +8,7 @@ import Jumbotron from '@/components/jumbotron/Jumbotron';
 import MarqueeText from '@/components/marquee/MarqueeText';
 import Sponsors from '@/components/sponsors/Sponsors';
 import TakeAway from '@/components/takeAway/TakeAway';
+import Speakers from '@/components/speakers/Speakers';
 
 export default function Home() {
 	return (
@@ -31,6 +32,9 @@ export default function Home() {
 			<div className="wrapper ">
 				<section id="#sponsors">
 					<Sponsors />
+				</section>
+				<section id="#speaker">
+					<Speakers />
 				</section>
 				<section id="#agenda">
 					<Agenda />
