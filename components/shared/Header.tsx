@@ -52,13 +52,13 @@ const Header = () => {
     const year = new Date().getFullYear();
 
   return (
-    <header className={`grid z-30 transition-all delay-150 ease-in-out ${isScrolled ? "fixed laptop:left-0 laptop:right-0 backdrop-blur-blur ": null} ${showMobileMenu && "h-full"} w-full laptop:grid-cols-12 laptop:max-w-screen-tv mx-auto grid-cols-2 laptop:items-center laptop:px-24 px-3 laptop:py-[22px] tablet:px-14 py-4`}>
-      <div className="laptop:col-span-2 col-span-1 z-40 relative">
-        <a href={header.conferenceLogo.route}>
+    <header className={`grid z-30 transition-all delay-150 ease-in-out ${isScrolled ? "fixed laptop:left-0 laptop:right-0 backdrop-blur-blur ": null} ${showMobileMenu && "h-full z-50"} w-full laptop:grid-cols-12 laptop:max-w-screen-tv mx-auto grid-cols-2 laptop:items-center laptop:px-24 px-3 laptop:py-[22px] tablet:px-14 py-4`}>
+      <div className="laptop:col-span-2 col-span-1">
+        <a href={header.conferenceLogo.route} className="z-50 relative">
           <Image src={header.conferenceLogo.logo} alt="logo" />
         </a>
       </div>
-      <div className={`fixed z-30 laptop:relative transition-all delay-150 ease-in-out ${showMobileMenu ? "right-0 left-0 ": "right-[-120%]"} w-full h-screen  laptop:right-0  laptop:h-max z-20 pt-[30%] tablet:pt-[5.5%] laptop:pt-0 laptop:gap-0 gap-24  tablet:gap-8 tablet:px-14 px-6 laptop:px-0 backdrop-blur-blur flex flex-col laptop:backdrop-blur-none laptop:col-span-10 laptop:grid-cols-12 laptop:grid`}>
+      <div className={`fixed laptop:relative transition-all delay-150 ease-in-out top-0 ${showMobileMenu ? "right-0 left-0  bottom-0 z-40": "right-[-120%]"} w-full h-screen  laptop:right-0  laptop:h-max  pt-[30%] tablet:pt-[5.5%] laptop:pt-0 laptop:gap-0 gap-24  tablet:gap-8 tablet:px-14 px-6 laptop:px-0 backdrop-blur-blur flex flex-col laptop:backdrop-blur-none laptop:col-span-10 laptop:grid-cols-12 laptop:grid`}>
         <div className="col-span-6 w-full laptop:flex tablet:justify-end laptop:justify-end ">
           <ul className="w-full flex  flex-col gap-9 tablet:gap-2  laptop:gap-0  laptop:flex-row justify-end items-center">
             {header.navigationLinks.map((link, index) => {
@@ -106,8 +106,8 @@ const Header = () => {
         </div>
         <span className="laptop:hidden block w-full text-center bottom-0 relative text-body-xm font-p-medium text-tc-10">© {year} GISfest Tech.</span>
       </div>
-      <div className="col-span-1 flex text-center mt-3 laptop:items-center justify-end laptop:hidden z-30 ">
-        <div onClick={handleMobileMenu} className="transition-all delay-150 ease-in-out">
+      <div className="col-span-1 flex text-center mt-3 laptop:items-center justify-end laptop:hidden">
+        <div onClick={handleMobileMenu} className="transition-all delay-150 ease-in-out z-40">
           {
             showMobileMenu ?
             <CloseIcon width={16} height={16} strokeColor={"white"} />:
