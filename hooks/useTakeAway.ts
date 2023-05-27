@@ -9,38 +9,16 @@ export const useTakeAway = () => {
 		setActiveIndex(index);
 	};
 
-	let touchstartX = 0;
-	let touchendX = 0;
 	const itemsLength = takeAway.length - 1;
-	const checkDirection = useCallback(() => {
-		//for touch events
-		if (touchendX < touchstartX && activeIndex < itemsLength) {
-			//swiped left
-			setActiveIndex(activeIndex + 1);
-		}
-		if (touchendX > touchstartX && activeIndex > 0) {
-			//swiped right
-			setActiveIndex(activeIndex - 1);
-		}
 
+	const checkDirection = useCallback(() => {
 		//for auto scroll
 		if (activeIndex >= 0 && activeIndex < itemsLength) {
 			setActiveIndex((prev) => prev + 1);
 		} else if (activeIndex === 2) {
 			setActiveIndex(0);
 		}
-	}, [activeIndex, touchendX, touchstartX, itemsLength]);
-
-	const handleTouchStart = (e: any) => {
-		touchstartX = e.changedTouches[0].screenX;
-	};
-
-	const handleTouchEnd = (e: any) => {
-		touchendX = e.changedTouches[0].screenX;
-		checkDirection();
-	};
-
-	//auto scroll
+	}, [activeIndex, itemsLength]);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -52,5 +30,5 @@ export const useTakeAway = () => {
 		return () => clearInterval(interval);
 	}, [activeIndex, checkDirection, takeAwayAutoScrollDelay]);
 
-	return { handleTouchEnd, handleTitleSwitch, handleTouchStart, activeIndex };
+	return { handleTitleSwitch, activeIndex };
 };

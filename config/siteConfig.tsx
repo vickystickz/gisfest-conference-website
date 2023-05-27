@@ -104,7 +104,7 @@ export const siteConfiguration: TSiteConfiguration = {
 	},
 
 	//Take away for GISfest 2023
-	takeAwayAutoScrollDelay: 3000,
+	takeAwayAutoScrollDelay: 5000,
 	takeAway: [
 		{
 			title: 'Learn',

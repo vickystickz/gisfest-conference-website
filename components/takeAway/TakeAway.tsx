@@ -8,15 +8,10 @@ import bgIsolation from '@/public/assets/bg-patterns/bg-isolation.svg';
 import { useTakeAway } from '@/hooks/useTakeAway';
 
 const TakeAway = () => {
-	const { handleTitleSwitch, handleTouchEnd, handleTouchStart, activeIndex } =
-		useTakeAway();
+	const { handleTitleSwitch, activeIndex } = useTakeAway();
 	const { takeAway } = siteConfiguration;
 	return (
-		<div
-			className="laptop:flex flex-col w-full lapto:gap-8  relative mt-[140px] tablet:mt-[80px]"
-			onTouchStart={handleTouchStart}
-			onTouchEnd={handleTouchEnd}
-		>
+		<div className="laptop:flex flex-col w-full lapto:gap-8  relative mt-[140px] tablet:mt-[80px]">
 			<div className="h-[600px] w-full overflow-auto laptop:h-auto laptop:w-auto laptop:right-[-6rem] absolute tablet:top-[-120px] laptop:top-[-230px] right-[-0%]  top-[-170px]">
 				<Image
 					src={bgIsolation}
