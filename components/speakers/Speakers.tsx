@@ -12,12 +12,11 @@ export default function Speakers() {
 	const { speakers } = siteConfiguration
 
 	return (
-        <div className="container mx-auto px-4">
+        <div className="flex flex-col gap-y-10 ">
             <SectionHeader
                 title="Speakers"
-                layout='text-center'
-            />
-            <div className="grid grid-flow-row grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-3">
+                layout='text-center' />
+            <div className="grid grid-flow-row grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-10 tv:grid-cols-4">
                 {speakers.map((speaker, id) => (
                     <ConferenceSpeakers key={`speaker-${id}`} speaker={speaker} />
                 ))}

@@ -6,31 +6,27 @@ import Link from 'next/link';
 const ConferenceSpeakers = ({ speaker } : TConferenceSpeaker) => {
         return (
             <>
-                <div className="flex bg-slate-100 p-8 md:p-0 dark:bg-slate-800">
-                    <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
-                        <div className="relative rounded-tl-full rounded-br-full rounded-bl-full rounded-tr-2xl h-60 w-60 ring-offset-2 ring-1 ring-orange-0" >
-                            <img className="w-full h-full object-scale-down rounded-tl-full rounded-br-full rounded-bl-full rounded-tr-2xl transition duration-300 ease-out transform hover:object-none ring-1 ring-orange-10" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt={speaker.name} />
-                            {speaker.avatar}
-                            <div className={`absolute bottom-[5%] right-[8%] rounded-full h-10 w-10 bg-black border ${getSocialColor(speaker.sociallink)}`}>
-                                <Link
-                                    href={speaker.sociallink} >
-                                    <div className={`absolute bottom-[25%] right-[23%] ${getSocialColor(speaker.sociallink)}`}>
-                                        {getSocialIcon(speaker.sociallink)}
-                                    </div>
-                                </Link>
-                            </div>
+                <div className="flex flex-col items-center text-center">
+                    <div className="relative rounded-tl-[240px] rounded-br-[240px] rounded-bl-[240px] rounded-tr-2xl h-[175.75px] w-[176.19px]  bg-gradient-to-r p-[1.8px] from-[#F5A627] via-[#995CA4] to-[#CE3573]" >
+                        <div className="bg-cover rounded-tl-[240px] rounded-br-[240px] rounded-bl-[240px] rounded-tr-2xl w-full h-full transition-all duration-700 hover:bg-center border border-l-yellow-20 border-b-purple-20 border-t-red-0 border-r-red-0 ring-1 ring-white bg-[url('https://s3-alpha-sig.figma.com/img/1f69/c0fc/fc5c26b71c587dc72a38eb1e10763f58?Expires=1685923200&Signature=QOSBoVlWsqVHmk-6bQni1HHQ467obQNr8TuZl1lZ1TzS2WOZT66mjQRtZ3NhlvF5lUT-sFvILm5m0~EvU~WSUIiZYiy29~GqTI5OlNnndqVXzRUKOfHSpxTyZIHbyRNh5qTQulp5F-nEhgRGxABw8-KNSlyRhu9B0vajv8nhLg36ai69bMO9OFi~3UXtFSWk7UKHVrQeYZV8~hOCBdWfXWEZSqx897QO8G~jD~AFUlqSQhJD1nXimKwrzbifbqw80tn3wTtg~V~B5Rhndp-kmGWOGtsg~xjn88k-mFeS7Qgjaau99WG32thmoYEMqUqRMNBgQTnQirgWKkVqt5SnWg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')]"></div>
+                        <div className={`absolute bottom-[5%] right-[8%] rounded-full h-10 w-10 bg-black border ${getSocialColor(speaker.sociallink)}`}>
+                            <Link
+                                href={speaker.sociallink} >
+                                <div className={`absolute bottom-[25%] right-[23%] ${getSocialColor(speaker.sociallink)}`}>
+                                    {getSocialIcon(speaker.sociallink)}
+                                </div>
+                            </Link>
                         </div>
-                        <figcaption className="font-medium">
-                            <div className="text-body font-p-semibold text-tc-0">
-                                {speaker.name}
-                            </div>
-                            <div className="text-tc-10">
-                                {speaker.role} @ {speaker.company}
-                            </div>
-                        </figcaption>
                     </div>
+                    <figcaption className="p-5 font-medium">
+                        <div className="text-body font-p-semibold text-tc-0">
+                            {speaker.name}
+                        </div>
+                        <div className="text-tc-10">
+                            {speaker.role} @ {speaker.company}
+                        </div>
+                    </figcaption>
                 </div>
-
         </>
         )
     }
