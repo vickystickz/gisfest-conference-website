@@ -12,6 +12,8 @@ import {
 } from '@/config/types';
 import LogoWhite from '@/public/assets/logos/logo-white.svg';
 
+const sponsorshipDeck =
+	'https://drive.google.com/file/d/1pIW3-Bf6lW0HXjwWxMalfQq5otFXKekc/view';
 export const siteConfiguration: TSiteConfiguration = {
 	/********  homePage  ***********/
 
@@ -35,24 +37,24 @@ export const siteConfiguration: TSiteConfiguration = {
 			{
 				text: 'Speakers',
 				route: 'speakers',
-				isActive: true,
+				isActive: false,
 			},
 			{
 				text: 'Agenda',
 				route: 'agenda',
-				isActive: true,
+				isActive: false,
 			},
 		],
 		navigationButtons: [
 			{
 				text: 'Sponsor GISfest2023',
-				route: '/sponsors',
+				route: '#sponsors',
 				isActive: true,
 			},
 			{
 				text: 'Buy Ticket',
 				route: '/tickets',
-				isActive: true,
+				isActive: false,
 			},
 		],
 	},
@@ -82,7 +84,7 @@ export const siteConfiguration: TSiteConfiguration = {
 			{
 				text: 'Grab a Ticket',
 				route: '/ticket',
-				isActive: true,
+				isActive: false,
 			},
 			{
 				text: 'Sponsor GISfest2023',
@@ -102,6 +104,7 @@ export const siteConfiguration: TSiteConfiguration = {
 	},
 
 	//Take away for GISfest 2023
+	takeAwayAutoScrollDelay: 3000,
 	takeAway: [
 		{
 			title: 'Learn',
@@ -144,6 +147,7 @@ export const siteConfiguration: TSiteConfiguration = {
 	marqueeText: '   Largest Geospatial gathering in Africa. GISfest2023.  ',
 
 	// Sponsors
+	sponsorshipDeckURL: sponsorshipDeck,
 	sponsors: [
 		{
 			category: SponsorCategory.Diamond,
@@ -203,6 +207,7 @@ export const siteConfiguration: TSiteConfiguration = {
 		},
 	],
 
+	showAgenda: false,
 	// Agenda
 	agenda: [
 		{
@@ -507,11 +512,11 @@ export const siteConfiguration: TSiteConfiguration = {
 	],
 
 	callToAction: {
-		largeText: 'Ready to discover New Spatial Insights?',
-		ctaText: 'Grab a Ticket Now!',
+		largeText: 'Ready to make history together?',
+		ctaText: 'Become a Sponsor!',
 		button: {
-			text: 'Grab a Ticket',
-			route: '/ticket',
+			text: 'Sponsorship Deck',
+			route: sponsorshipDeck,
 			showArrow: true,
 		},
 	},

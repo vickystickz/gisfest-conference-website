@@ -124,14 +124,16 @@ module.exports = {
 				cardBgContour: "url('../public/assets/bg-patterns/bg-contour.svg')",
 				hero: "url('../public/assets/images/hero-imgage.jpeg')",
 				boxPattern: "url('../public/assets/bg-patterns/bg-boxes.svg')",
-				gradient: "linear-gradient(180.83deg, rgba(10, 10, 11, 0.05) -3.75%, #0A0A0B 92.43%)",
+				gradient:
+					'linear-gradient(180.83deg, rgba(10, 10, 11, 0.05) -3.75%, #0A0A0B 92.43%)',
 				fullscreenBgContour:
 					"url('../public/assets/bg-patterns/screen-bg-contour.png')",
+				ctaBGContour: "url('../public/assets/bg-patterns/cta-contour.svg')",
 			},
 			backdropBlur: {
 				blur: '7.5px',
 				sm: '2px',
-				xs: '0.8px'
+				xs: '0.8px',
 			},
 		},
 		boxShadow: {

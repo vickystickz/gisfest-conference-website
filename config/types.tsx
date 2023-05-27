@@ -23,14 +23,17 @@ export type TSiteConfiguration = {
 	jumbotron: TJumbotron;
 	about: TAbout;
 	takeAway: TtakeAwayInfo[];
+	takeAwayAutoScrollDelay: number;
 	faq: TFaqInfo[];
 	marqueeText: string;
 	sponsors: TSponsorCard['sponsor'][];
+	sponsorshipDeckURL: string;
 	agenda: TAgenda[];
 	venueImages: veneueImage[];
 	teams: Tteams[];
 	teamDescription: string[];
 	callToAction: TCallToAction;
+	showAgenda: boolean;
 };
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {

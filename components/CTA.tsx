@@ -4,9 +4,9 @@ import { HeroLocation } from './jumbotron/HeroInfo';
 
 export default function CallToAction() {
 	const { callToAction, jumbotron } = siteConfiguration;
-	//todo - awaiting background SVG from Micheal
+
 	return (
-		<div className="flex items-center font-clashDisplay justify-center w-full bg-cardBgContour bg-black rounded-3xl">
+		<div className="flex bg-ctaBGContour items-center font-clashDisplay justify-center w-full bg-cover bg-no-repeat bg-sc-10 rounded-3xl">
 			<div className="p-10 flex flex-col gap-10 ">
 				<div className="flex flex-col laptop:flex-row tablet:flex-row laptop:gap-8 gap-4 laptop:p-0 tablet:p-0 pb-[32px] pt-5">
 					<HeroLocation

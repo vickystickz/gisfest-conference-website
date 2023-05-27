@@ -9,8 +9,10 @@ import MarqueeText from '@/components/marquee/MarqueeText';
 import Sponsors from '@/components/sponsors/Sponsors';
 import TakeAway from '@/components/takeAway/TakeAway';
 import CallToAction from '@/components/CTA';
+import { siteConfiguration } from '@/config/siteConfig';
 
 export default function Home() {
+	const { showAgenda } = siteConfiguration;
 	return (
 		<>
 			<Jumbotron />
@@ -33,9 +35,11 @@ export default function Home() {
 				<section id="#sponsors">
 					<Sponsors />
 				</section>
-				<section id="#agenda">
-					<Agenda />
-				</section>
+				{showAgenda ? (
+					<section id="#agenda">
+						<Agenda />
+					</section>
+				) : null}
 				<SpatialPeople />
 				<section id="#venue">
 					<Venue />
