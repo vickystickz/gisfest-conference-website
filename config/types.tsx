@@ -8,7 +8,33 @@ export type TConferenceEdition = {
 	url: string;
 };
 
+type TCallToAction = {
+	largeText: string;
+	ctaText: string;
+	button: {
+		text: string;
+		route: string;
+		showArrow: boolean;
+	};
+};
 export type TSiteConfiguration = {
+	header: THeader['header'];
+	conferenceType: TConferenceType;
+	jumbotron: TJumbotron;
+	about: TAbout;
+	takeAway: TtakeAwayInfo[];
+	takeAwayAutoScrollDelay: number;
+	faq: TFaqInfo[];
+	marqueeText: string;
+	sponsors: TSponsorCard['sponsor'][];
+	sponsorshipDeckURL: string;
+	agenda: TAgenda[];
+	venueImages: veneueImage[];
+	teams: Tteams[];
+	teamDescription: string[];
+	callToAction: TCallToAction;
+	showAgenda: boolean;
+};
 	header: THeader['header'],
 	conferenceType: TConferenceType,
 	jumbotron: TJumbotron,
@@ -42,23 +68,21 @@ export type TConferenceType = {
 	title: string;
 	question: string;
 	picture: string;
-}
+};
 
 export type TAbout = {
 	description: Array<string>;
-}
-
+};
 
 export type TFaqInfo = {
 	question: string;
 	answer: string;
-}
-
+};
 
 export type TtakeAwayInfo = {
 	title: string;
 	description: string;
-}
+};
 
 export type TSponsorCard = {
 	sponsor: {
@@ -69,7 +93,6 @@ export type TSponsorCard = {
 		website: string;
 	};
 };
-
 
 export enum AgendaCategory {
 	workshop = 'workshop',
@@ -103,48 +126,46 @@ export type navigationLinks = {
 	text: string;
 	route: string;
 	isActive: boolean;
-}
+};
 
 export type veneueImage = {
-	path: StaticImageData,
-	alt: string
-}
+	path: StaticImageData;
+	alt: string;
+};
 
 export type conferenceLogo = {
-	route: string,
-	logo: StaticImageData
-}
-
+	route: string;
+	logo: StaticImageData;
+};
 
 export type THeader = {
 	header: {
 		conferenceLogo: conferenceLogo;
 		navigationLinks: navigationLinks[];
 		navigationButtons: navigationLinks[];
-	}
-}
+	};
+};
 
 export type Tteams = {
-	category: string,
-	teamMembers: teamMembers[]
-}
+	category: string;
+	teamMembers: teamMembers[];
+};
 
 export type teamMembers = {
-	fullName: string,
-	twitter: string,
-	linkedIn: string,
-	teamName: string,
-}
+	fullName: string;
+	twitter: string;
+	linkedIn: string;
+	teamName: string;
+};
 
 export type conference = {
-	year: string,
-	edition: string,
-	title: string,
-	date: string,
-	location: string,
-	description: string
-}
-
+	year: string;
+	edition: string;
+	title: string;
+	date: string;
+	location: string;
+	description: string;
+};
 
 export type TJumbotron = {
 	heroImage: StaticImageData,

@@ -13,7 +13,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${montserrat.variable} font-sans scroll-smooth`}>
+		<html
+			lang="en"
+			className={`${montserrat.variable} font-sans scroll-smooth`}
+		>
 			<body className="bg-sc-0">{children}</body>
 		</html>
 	);
@@ -22,7 +25,7 @@ export default function RootLayout({
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Africa GISfestival Conference ',
+	title: 'GISfestival 2023 Conference ',
 	description: 'Geospatial Conference for the Spatial People',
 	authors: { name: 'GISfest', url: 'https://www.gisfest.org' },
 	applicationName: 'GISfest Conference Website',
@@ -31,7 +34,7 @@ export const metadata: Metadata = {
 	creator: 'GISfest Tech Team',
 	metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_FRONTEND_URL}`),
 	openGraph: {
-		title: 'Africa GISfestival Conference ',
+		title: 'GISfestival 2023 Conference ',
 		description: 'Geospatial Conference for the Spatial People',
 		url: 'https://www.gisfest.org',
 		siteName: 'GISfest Conference Website',
@@ -53,7 +56,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Africa GISfestival Conference',
+		title: 'GISfestival 2023 Conference',
 		description: 'Geospatial Conference for the Spatial People',
 		creator: '@gis_fest',
 	},

@@ -9,42 +9,44 @@ import MarqueeText from '@/components/marquee/MarqueeText';
 import Sponsors from '@/components/sponsors/Sponsors';
 import TakeAway from '@/components/takeAway/TakeAway';
 import Speakers from '@/components/speakers/Speakers';
+import CallToAction from '@/components/CTA';
+import { siteConfiguration } from '@/config/siteConfig';
 
 export default function Home() {
+	const { showAgenda } = siteConfiguration;
 	return (
 		<>
-			<Jumbotron/>
-			<div className="wrapper ">
+			<Jumbotron />
+			<div className="wrapper">
 				<section id="#conferenceType">
-					<ConferenceType/>
+					<ConferenceType />
 				</section>
-				<section id="#about" >
-					<About />	
+				<section id="#about">
+					<About />
 				</section>
-				<section id='#takeaway'>
+				<section id="#takeaway">
 					<TakeAway />
-				</section>	
-				<section id='#faq'>
+				</section>
+				<section id="#faq">
 					<FAQ />
 				</section>
 			</div>
 			<MarqueeText />
-			<div className="wrapper ">
+			<div className="wrapper">
 				<section id="#sponsors">
 					<Sponsors />
 				</section>
-				<section id="#speaker">
-					<Speakers />
-				</section>
-				<section id="#agenda">
-					<Agenda />
-				</section>
+				{showAgenda ? (
+					<section id="#agenda">
+						<Agenda />
+					</section>
+				) : null}
 				<SpatialPeople />
 				<section id="#venue">
 					<Venue />
 				</section>
+				<CallToAction />
 			</div>
-			
 		</>
 	);
 }
