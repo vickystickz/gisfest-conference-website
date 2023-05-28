@@ -520,4 +520,63 @@ export const siteConfiguration: TSiteConfiguration = {
 			showArrow: true,
 		},
 	},
+
+	speakers: [
+		{
+		  name: 'Cameron Williamson',
+		  role: 'Product Evanlegist',
+		  avatar: '/speakers/oluwatobi.jpg',
+		  company: 'Dealcode',
+		  sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
+		},
+		{
+		  name: 'Annette Black',
+		  role: 'GIS Analyst',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'Esri',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		},
+		{
+		  name: 'Marvin McKinney',
+		  role: 'Researcher and GIS Expert',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'GISkonsult',
+		  sociallink: 'https://www.linkedin.com/in/oluwaseun-ogunbiyi-0b1b3b1b0/',
+		},
+		{
+		  name: 'Floyd Miles',
+		  role: 'GIS Expert',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'Sambus',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		},
+		{
+		  name: 'Dianne Russell',
+		  role: 'GIS Developer',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'Trenewise',
+		  sociallink: 'https://www.linkedin.com/in/oluwaseun-ogunbiyi-0b1b3b1b0/',
+		},
+		{
+		  name: 'Jane Cooper',
+		  role: 'Geospatial Expert',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'Bolt',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		  },
+		{
+		  name: 'Courtney Henry',
+		  role: 'Data Quality Manger',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'HOTOSM',
+		  sociallink: 'https://www.linkedin.com/in/oluwaseun-ogunbiyi-0b1b3b1b0/',
+		},
+		{
+		  name: 'Cody Fisher',
+		  role: 'Product Evangelist',
+		  avatar: '/speakers/oluwaseun.jpg',
+		  company: 'AfriHAck',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		},
+	  ],
 };
