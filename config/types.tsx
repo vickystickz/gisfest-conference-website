@@ -34,21 +34,8 @@ export type TSiteConfiguration = {
 	teamDescription: string[];
 	callToAction: TCallToAction;
 	showAgenda: boolean;
-};
-	header: THeader['header'],
-	conferenceType: TConferenceType,
-	jumbotron: TJumbotron,
-	about: TAbout,
-	takeAway: TtakeAwayInfo[],
-	faq: TFaqInfo[],
-	marqueeText: string,
-	sponsors: TSponsorCard['sponsor'][],
-	agenda: TAgenda[],
-	venueImages: veneueImage[],
-	teams: Tteams[],
-	teamDescription: string[],
 	speakers: TConferenceSpeaker['speaker'][],
-}
+};
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {
 	width: string | number;
