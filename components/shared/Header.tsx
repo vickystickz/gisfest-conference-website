@@ -49,7 +49,7 @@ const Header = () => {
 					: null
 			} ${
 				showMobileMenu && 'h-full z-50'
-			} w-full laptop:grid-cols-12 laptop:max-w-screen-tv mx-auto grid-cols-2 laptop:items-center laptop:px-24 px-3 laptop:py-[22px] tablet:px-14 py-4`}
+			} w-full laptop:grid-cols-12 laptop:w-full tv:max-w-screen-tv tv:mx-auto grid-cols-2 laptop:items-center laptop:px-24 px-3 laptop:py-[22px] tablet:px-14 py-4`}
 		>
 			<div className="laptop:col-span-2 col-span-1">
 				<a href={header.conferenceLogo.route} className="z-50 relative">

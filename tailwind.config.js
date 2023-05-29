@@ -9,8 +9,8 @@ module.exports = {
 			// => @media (min-width: 768px) { ... }
 			laptop: '976px',
 			// => @media (min-width: 976px) { ... }
-			tv: '1440px',
-			// => @media (min-width: 1440px) { ... }
+			tv: '1600px',
+			// => @media (min-width: 1600px) { ... }
 		},
 		fontFamily: {
 			sans: ['var(--font-montserrat)'],
