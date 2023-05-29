@@ -88,6 +88,7 @@ module.exports = {
 				10: '#793884',
 				20: '#A36CAD',
 				30: '#995CA4',
+				40: '#D7578B',
 			},
 			//red
 			red: {
@@ -102,7 +103,11 @@ module.exports = {
 				20: '#52837A',
 				30: '#AAF527',
 			},
-
+			//orange
+			orange: {
+				0: '#EA580C',
+				10: '#E87F3A',
+			},
 			//sc - surface color
 			sc: {
 				0: '#0A0A0B',

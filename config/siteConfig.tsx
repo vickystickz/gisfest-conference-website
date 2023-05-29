@@ -14,6 +14,8 @@ import LogoWhite from '@/public/assets/logos/logo-white.svg';
 
 const sponsorshipDeck =
 	'https://drive.google.com/file/d/1pIW3-Bf6lW0HXjwWxMalfQq5otFXKekc/view';
+const speakerDeck = 'https://downloadurl.com'
+const speakerCTA = 'Join our Speakers'
 export const siteConfiguration: TSiteConfiguration = {
 	/********  homePage  ***********/
 
@@ -520,4 +522,65 @@ export const siteConfiguration: TSiteConfiguration = {
 			showArrow: true,
 		},
 	},
+
+	speakerDeckURL: speakerDeck,
+	speakerCTA: speakerCTA,
+	speakers: [
+		{
+		  name: 'Cameron Williamson',
+		  role: 'Product Evanlegist',
+		  avatar: '/assets/images/speakers/cameron.png',
+		  company: 'Dealcode',
+		  sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
+		},
+		{
+		  name: 'Annette Black',
+		  role: 'GIS Analyst',
+		  avatar: '/assets/images/speakers/annette.png',
+		  company: 'Esri',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		},
+		{
+		  name: 'Marvin McKinney',
+		  role: 'Researcher and GIS Expert',
+		  avatar: '/assets/images/speakers/marvin.png',
+		  company: 'GISkonsult',
+		  sociallink: 'https://www.linkedin.com/in/oluwaseun-ogunbiyi-0b1b3b1b0/',
+		},
+		{
+		  name: 'Floyd Miles',
+		  role: 'GIS Expert',
+		  avatar: '/assets/images/speakers/floyd.png',
+		  company: 'Sambus',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		},
+		{
+		  name: 'Dianne Russell',
+		  role: 'GIS Developer',
+		  avatar: '/assets/images/speakers/dianne.png',
+		  company: 'Trenewise',
+		  sociallink: 'https://www.linkedin.com/in/oluwaseun-ogunbiyi-0b1b3b1b0/',
+		},
+		{
+		  name: 'Jane Cooper',
+		  role: 'Geospatial Expert',
+		  avatar: '/assets/images/speakers/jane.png',
+		  company: 'Bolt',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		  },
+		{
+		  name: 'Courtney Henry',
+		  role: 'Data Quality Manger',
+		  avatar: '/assets/images/speakers/courtney.png',
+		  company: 'HOTOSM',
+		  sociallink: 'https://www.linkedin.com/in/oluwaseun-ogunbiyi-0b1b3b1b0/',
+		},
+		{
+		  name: 'Cody Fisher',
+		  role: 'Product Evangelist',
+		  avatar: '/assets/images/speakers/cody.png',
+		  company: 'AfriHAck',
+		  sociallink: 'https://twitter.com/oluwaseunogunb1',
+		},
+	  ],
 };

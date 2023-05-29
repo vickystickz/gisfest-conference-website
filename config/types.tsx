@@ -34,6 +34,9 @@ export type TSiteConfiguration = {
 	teamDescription: string[];
 	callToAction: TCallToAction;
 	showAgenda: boolean;
+	speakers: TConferenceSpeaker['speaker'][],
+	speakerDeckURL: string;
+	speakerCTA: string;
 };
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {
@@ -154,7 +157,20 @@ export type conference = {
 };
 
 export type TJumbotron = {
-	heroImage: StaticImageData;
-	conference: conference;
-	heroButtons: navigationLinks[];
+	heroImage: StaticImageData,
+	conference: conference,
+	heroButtons: navigationLinks[]
+
+}
+
+export type TConferenceSpeaker = {
+	speaker: {
+		name: string;
+		role: string;
+		avatar: string;
+		company: string;
+		sociallink: string;
+
+	};
+
 };
