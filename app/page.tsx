@@ -8,6 +8,7 @@ import Jumbotron from '@/components/jumbotron/Jumbotron';
 import MarqueeText from '@/components/marquee/MarqueeText';
 import Sponsors from '@/components/sponsors/Sponsors';
 import TakeAway from '@/components/takeAway/TakeAway';
+import Speakers from '@/components/speakers/Speakers';
 import CallToAction from '@/components/CTA';
 import { siteConfiguration } from '@/config/siteConfig';
 
