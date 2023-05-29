@@ -14,6 +14,8 @@ import LogoWhite from '@/public/assets/logos/logo-white.svg';
 
 const sponsorshipDeck =
 	'https://drive.google.com/file/d/1pIW3-Bf6lW0HXjwWxMalfQq5otFXKekc/view';
+const speakerDeck = 'https://downloadurl.com'
+const speakerCTA = 'Join our Speakers'
 export const siteConfiguration: TSiteConfiguration = {
 	/********  homePage  ***********/
 
@@ -521,6 +523,8 @@ export const siteConfiguration: TSiteConfiguration = {
 		},
 	},
 
+	speakerDeckURL: speakerDeck,
+	speakerCTA: speakerCTA,
 	speakers: [
 		{
 		  name: 'Cameron Williamson',

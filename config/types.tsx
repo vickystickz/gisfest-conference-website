@@ -35,6 +35,8 @@ export type TSiteConfiguration = {
 	callToAction: TCallToAction;
 	showAgenda: boolean;
 	speakers: TConferenceSpeaker['speaker'][],
+	speakerDeckURL: string;
+	speakerCTA: string;
 };
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {

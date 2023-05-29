@@ -2,6 +2,7 @@ import { siteConfiguration} from '@/config/siteConfig'
 import ConferenceSpeakers from './ConferenceSpeaker'
 import SectionHeader from '../shared/SectionHeader';
 import Link from 'next/link';
+import { join } from 'path';
 
 //todo-- going to config @vickystickz
 //done @linibensonjr
@@ -9,7 +10,7 @@ import Link from 'next/link';
 
 
 export default function Speakers() { 
-	const { speakers } = siteConfiguration
+	const { speakers, speakerDeckURL, speakerCTA } = siteConfiguration
 
 	return (
         <div className="flex flex-col gap-y-10 ">
@@ -29,11 +30,11 @@ export default function Speakers() {
                 </div>
                 <div className="flex justify-start tablet:justify-end tablet:basis:1/2 laptop:basis-2/3 tablet:self-center   p-2 tablet:p-4">
                     <Link
-                        href={'https://downloadurl.com'}
-                        title="Jpin our Speakers"
+                        href={speakerDeckURL}
+                        title={speakerCTA}
                         className="py-[14px] px-6 tablet:p-4 laptop:text-h5 tablet:text-h5 font-clashDisplay text-body whitespace-nowrap text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
                     >
-                        Join our Speakers
+                        {speakerCTA}
                     </Link>
                 </div>
             </div>
