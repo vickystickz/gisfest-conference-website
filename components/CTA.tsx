@@ -30,9 +30,7 @@ export default function CallToAction() {
 					text={callToAction.button.text}
 					route={callToAction.button.route}
 					showArrow={callToAction.button.showArrow}
-					textColor="black"
-					bgColor="bg-white"
-					otherStyles="font-p-medium  "
+					variant="white"
 				/>
 			</div>
 		</div>

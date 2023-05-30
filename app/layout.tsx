@@ -17,12 +17,16 @@ export default function RootLayout({
 			lang="en"
 			className={`${montserrat.variable} font-sans scroll-smooth`}
 		>
-			<body className="bg-sc-0">{children}</body>
+			<body>
+				<Header />
+				<main className="bg-sc-0  min-h-screen">{children}</main>
+			</body>
 		</html>
 	);
 }
 
 import type { Metadata } from 'next';
+import Header from '@/components/shared/Header';
 
 export const metadata: Metadata = {
 	title: 'GISfestival 2023 Conference ',

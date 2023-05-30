@@ -43,7 +43,7 @@ const Header = () => {
 
 	return (
 		<header
-			className={`grid z-30 transition-all delay-150 ease-in-out ${
+			className={`grid z-30  transition-all delay-150 ease-in-out ${
 				isScrolled
 					? 'fixed laptop:left-0 laptop:right-0 backdrop-blur-blur '
 					: null
@@ -93,8 +93,6 @@ const Header = () => {
 											text={button.text}
 											route={button.route}
 											showArrow={true}
-											bgColor={'bg-white'}
-											textColor={'sc-20'}
 											otherStyles={'font-p-semibold'}
 										/>
 								  )
@@ -104,8 +102,6 @@ const Header = () => {
 											text={button.text}
 											route={button.route}
 											showArrow={false}
-											bgColor={'bg-black'}
-											textColor={'white'}
 											otherStyles={'border-[1px] border-tc-30 font-p-semibold'}
 										/>
 								  );
