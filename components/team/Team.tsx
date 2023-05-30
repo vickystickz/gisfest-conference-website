@@ -1,13 +1,14 @@
 import React from "react";
 import SectionHeader from "../shared/SectionHeader";
 import { siteConfiguration } from "@/config/siteConfig";
+import ConferenceSpeakers from "../speakers/ConferenceSpeaker";
 
 const Team = () => {
   const { teams, teamDescription } = siteConfiguration;
   return (
-    <div className="laptop:px-20 tablet:px-16 px-0 ">
-      <div className="laptop:px-4 tablet: px-0 py-16 ">
-        <SectionHeader title="Team" layout="text-start" />
+    <div className="laptop:px-20 tablet:px-4 px-0 space-y-[80px] z-20 relative">
+      <div className="laptop:w-[88%] laptop:mx-auto tablet:px-16 px-0 py-20 pt-32">
+        <SectionHeader title="Team" layout="text-start font-clashDisplay" />
         <div className="flex flex-col gap-6">
           {teamDescription.map((description, id) => (
             <p
@@ -20,28 +21,32 @@ const Team = () => {
         </div>
       </div>
 
-      <div>
+      <div className="space-y-[115px]">
         {teams.map((team, id) => {
           if (team.category === "Organizing") {
-            return team.teamMembers.map((teamMember, id) => (
-              <div
-                key={`team-category-${id}`}
-                className="grid laptop:grid-cols-4 tablet:grid-cols-3 gap-8 grid-cols-1"
-              >
-
-
-              </div>
-            ));
+              return(
+                  <div key={`team-category-${id}`} className=" space-y-12">
+                    {/* <SectionHeader title={team.category} layout="text-center" /> */}
+                    <div className="grid laptop:grid-cols-4 tablet:grid-cols-2 gap-8 grid-cols-1">
+                      {team.teamMembers.map((teamMember, id) => (
+                        <ConferenceSpeakers key={`speaker-${id}`}
+                        speaker={
+                        {name: teamMember.fullName, role: teamMember.teamName, sociallink: teamMember.linkedIn, avatar: teamMember.avatar, company: '' }
+                      } />
+                      ))}
+                  </div>
+                </div>
+                );
           } else {
             return (
-              <div key={`team-category-${id}`}>
-                <SectionHeader title={team.category} layout="text-center" />
-                <div className="grid laptop:grid-cols-4 tablet:grid-cols-3 gap-8 grid-cols-1">
+              <div key={`team-category-${id}`} className="space-y-12">
+                <SectionHeader title={team.category} layout="text-center font-clashDisplay" />
+                <div className="grid laptop:grid-cols-4 tablet:grid-cols-2 gap-8 grid-cols-1">
                   {team.teamMembers.map((teamMember, id) => (
-                    <div
-                      key={`team-member-${id}`}
-                      className="col-span-1"
-                    ></div>
+                    <ConferenceSpeakers key={`speaker-${id}`}
+                    speaker={
+                    {name: teamMember.fullName, role: teamMember.teamName, sociallink: teamMember.linkedIn, avatar: teamMember.avatar, company: '' }
+                  } />
                   ))}
                 </div>
               </div>

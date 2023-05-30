@@ -34,6 +34,7 @@ export type TSiteConfiguration = {
 	teamDescription: string[];
 	callToAction: TCallToAction;
 	showAgenda: boolean;
+	defaultSpeakerInfo: TConferenceSpeaker['speaker'][];
 	speakers: TConferenceSpeaker['speaker'][],
 	speakerDeckURL: string;
 	speakerCTA: string;
@@ -145,6 +146,7 @@ export type teamMembers = {
 	twitter: string;
 	linkedIn: string;
 	teamName: string;
+	avatar: string;
 };
 
 export type conference = {

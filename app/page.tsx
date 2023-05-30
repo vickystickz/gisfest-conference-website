@@ -36,6 +36,9 @@ export default function Home() {
 				<section id="#sponsors">
 					<Sponsors />
 				</section>
+				<section id="#speakers">
+					<Speakers />
+				</section>
 				{showAgenda ? (
 					<section id="#agenda">
 						<Agenda />
