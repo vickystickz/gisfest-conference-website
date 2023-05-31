@@ -7,12 +7,11 @@ import { siteConfiguration } from '@/config/siteConfig'
 const Jumbotron = () => {
     const {jumbotron} = siteConfiguration
   return (
-    <div className='laptop:h-screen tablet:h-max relative transition-all delay-150 ease-out flex flex-col laptop:gap-[5%] tablet:gap-[5%] gap-4 '>
-         <Header />
-        <Image src={jumbotron.heroImage} alt='hero-image' className='top-0 object-cover bottom-0 z-0 absolute h-full w-full' />
-        <div className='bg-gradient  absolute z-10 top-0 w-full h-full'>
+    <div className='h-screen tablet:h-[700px] z-0 left-0 right-0 transition-all delay-150 ease-out flex flex-col justify-center items-center '>
+        <Image src={jumbotron.heroImage} alt='hero-image' className='top-0 object-cover left-0 right-0 bottom-0 z-0 absolute h-full w-full tablet:h-[800px]' />
+        <div className='bg-gradient absolute z-10 top-0  left-0 w-full h-full tablet:h-[800px]'>
         </div>
-         <HeroContent conference={jumbotron.conference} buttons={jumbotron.heroButtons}  />
+        <HeroContent conference={jumbotron.conference} buttons={jumbotron.heroButtons}  />
     </div>
     
   )

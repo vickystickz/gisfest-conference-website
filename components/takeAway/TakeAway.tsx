@@ -25,7 +25,7 @@ const TakeAway = () => {
 			<div className="grid  laptop:grid-cols-6 tablet:grid-cols-6 grid-cols-1 relative laptop:gap-0 gap-4">
 				<div className="tablet:col-span-3 col-span-1 flex flex-col gap-14 tablet:gap-0">
 					<div className="flex flex-col">
-						<ul className="flex flex-row gap-8 items-center">
+						<ul className="flex flex-row flex-wrap gap-8 items-center">
 							{takeAway.map((takeAway, index) => {
 								return (
 									<li
@@ -51,7 +51,7 @@ const TakeAway = () => {
 						/>
 					</div>
 				</div>
-				<div className="col-span-4 tablet:col-span-3 flex justify-center tablet:justify-end transition-all delay-150  ease-in-out">
+				<div className="col-span-4 tablet:col-span-3 flex h-[250px] justify-center tablet:justify-end transition-all delay-150  ease-in-out">
 					{takeAway.map((takeAway, index) => {
 						return (
 							index === activeIndex && (
