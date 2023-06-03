@@ -12,8 +12,15 @@ import {
 } from '@/config/types';
 import LogoWhite from '@/public/assets/logos/logo-white.svg';
 
+
+//Team members pictures
+
+
+
 const sponsorshipDeck =
 	'https://drive.google.com/file/d/1pIW3-Bf6lW0HXjwWxMalfQq5otFXKekc/view';
+const speakerDeck = 'https://downloadurl.com'
+const speakerCTA = 'Join our Speakers'
 export const siteConfiguration: TSiteConfiguration = {
 	/********  homePage  ***********/
 
@@ -447,54 +454,63 @@ export const siteConfiguration: TSiteConfiguration = {
 					twitter: '@emmanueljolaiya',
 					linkedIn: 'https://www.linkedin.com/in/emmanueljolaiya/',
 					teamName: 'Design & Tech.',
+					avatar: '/assets/images/team/emmanuel_jolaiya.svg'
 				},
 				{
 					fullName: 'Victor Ademoyero',
 					twitter: '@victorademoyero',
 					linkedIn: 'https://www.linkedin.com/in/victorademoyero/',
 					teamName: 'Design & Tech.',
+					avatar: '/assets/images/team/victor_ademoyero.svg'
 				},
 				{
 					fullName: 'Michael Olanrewaju',
 					twitter: '@michaelolanrewaju',
 					linkedIn: 'https://www.linkedin.com/in/michaelolanrewaju/',
 					teamName: 'Design & Tech.',
+					avatar: '/assets/images/team/michael_olanrewaju.svg'
 				},
 				{
 					fullName: 'Mercy Akintola',
 					twitter: '@mercyakintola',
 					linkedIn: 'https://www.linkedin.com/in/mercyakintola/',
 					teamName: 'Logistics',
+					avatar: '/assets/images/team/mercy_akintola.svg'
 				},
 				{
 					fullName: 'Juwon Ishola',
 					twitter: '@juwonishola',
 					linkedIn: 'https://www.linkedin.com/in/juwonishola/',
 					teamName: 'Media',
+					avatar: '/assets/images/team/juwon_ishola.svg'
 				},
 				{
 					fullName: 'Shehu Muhammed',
 					twitter: '@shehumuhammed',
 					linkedIn: 'https://www.linkedin.com/in/shehumuhammed/',
 					teamName: 'Media',
+					avatar: '/assets/images/team/shehu_muhammed.svg'
 				},
 				{
 					fullName: 'Emeka Igwe',
 					twitter: '@emekaigwe',
 					linkedIn: 'https://www.linkedin.com/in/juwonishola/',
 					teamName: 'Speakers Engagement',
+					avatar: '/assets/images/team/emeka_igwe.svg'
 				},
 				{
 					fullName: 'Omowonuola Akintola',
 					twitter: '@omowonuolaakintola',
 					linkedIn: 'https://www.linkedin.com/in/omowonuolaakintola/',
 					teamName: 'Speakers Engagement',
+					avatar: '/assets/images/speakers/annette.png'
 				},
 				{
 					fullName: 'Oluwadamilola Salau',
 					twitter: '@shehumuhammed',
 					linkedIn: 'https://www.linkedin.com/in/shehumuhammed/',
 					teamName: 'Budget',
+					avatar: '/assets/images/team/oluwadamilola_salau.svg'
 				},
 			],
 		},
@@ -502,10 +518,32 @@ export const siteConfiguration: TSiteConfiguration = {
 			category: TeamCategory.Volunteers,
 			teamMembers: [
 				{
-					fullName: 'Shehu Muhammed',
+					fullName: 'Courtney Henry',
 					twitter: '@shehumuhammed',
 					linkedIn: 'https://www.linkedin.com/in/shehumuhammed/',
 					teamName: 'Media',
+					avatar: '/assets/images/speakers/courtney.png'
+				},
+				{
+					fullName: 'Annette Black',
+					twitter: '@shehumuhammed',
+					linkedIn: 'https://www.linkedin.com/in/shehumuhammed/',
+					teamName: 'Design & Tech.',
+					avatar: '/assets/images/speakers/annette.png'
+				},
+				{
+					fullName: 'Marvin McKinney',
+					twitter: '@shehumuhammed',
+					linkedIn: 'https://www.linkedin.com/in/shehumuhammed/',
+					teamName: 'Budget',
+					avatar: '/assets/images/speakers/marvin.png'
+				},
+				{
+					fullName: 'Floyd Miles',
+					twitter: '@shehumuhammed',
+					linkedIn: 'https://www.linkedin.com/in/shehumuhammed/',
+					teamName: 'Logistics',
+					avatar: '/assets/images/speakers/floyd.png'
 				},
 			],
 		},
@@ -520,4 +558,60 @@ export const siteConfiguration: TSiteConfiguration = {
 			showArrow: true,
 		},
 	},
+
+	speakerDeckURL: speakerDeck,
+	speakerCTA: speakerCTA,
+	defaultSpeakerInfo: [
+		{
+			name: '',
+			role: 'Coming Soon!',
+			avatar: '/assets/images/defaultSpeaker.svg',
+			company: '',
+			sociallink: '',
+		  },
+		  {
+			name: '',
+			role: 'Coming Soon!',
+			avatar: '/assets/images/defaultSpeaker.svg',
+			company: '',
+			sociallink: '',
+		  },
+		  {
+			name: '',
+			role: 'Coming Soon!',
+			avatar: '/assets/images/defaultSpeaker.svg',
+			company: '',
+			sociallink: '',
+		  },
+		  {
+			name: '',
+			role: 'Coming Soon!',
+			avatar: '/assets/images/defaultSpeaker.svg',
+			company: '',
+			sociallink: '',
+		  },
+		  {
+			name: '',
+			role: 'Coming Soon!',
+			avatar: '/assets/images/defaultSpeaker.svg',
+			company: '',
+			sociallink: '',
+		  },
+		  {
+			name: '',
+			role: 'Coming Soon!',
+			avatar: '/assets/images/defaultSpeaker.svg',
+			company: '',
+			sociallink: '',
+		  },
+	],
+	speakers: [
+		{
+		  name: 'Cameron Williamson',
+		  role: 'Product Evanlegist',
+		  avatar: '',
+		  company: 'Dealcode',
+		  sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
+		},
+	  ],
 };

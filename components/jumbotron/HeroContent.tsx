@@ -9,7 +9,7 @@ type THeroContent = {
 
 const HeroContent = ({ conference, buttons }: THeroContent) => {
 	return (
-		<div className="z-20 flex-grow flex flex-col laptop:gap-12 gap-14 tablet:gap-12  w-full relative h-full laptop:mt-[2%] tablet:mt-[3%] tablet:mb-0  laptop:mb-0 mt-[10%] mb-[60%] px-6 laptop:px-24 tablet:px-14 max-w-screen-tv mx-auto">
+		<div className="z-20 flex flex-col laptop:gap-12 gap-14 tablet:gap-12 laptop:pt-[5rem] pt-[4rem] w-full relative h-full max-w-screen-tv mx-auto">
 			<div className="flex flex-col laptop:gap-[2rem] tablet:gap-[2rem] gap-2">
 				<div className="flex gap-8">
 					<HeroText text={`GISfest ${conference.year}`} />

@@ -1,13 +1,15 @@
 import { siteConfiguration } from '@/config/siteConfig';
 import Button from './shared/Button';
 import { HeroLocation } from './jumbotron/HeroInfo';
+import BgLine from '../public/assets/bg-patterns/bg-line.svg';
+import Image from 'next/image';
 
 export default function CallToAction() {
 	const { callToAction, jumbotron } = siteConfiguration;
 
 	return (
-		<div className="flex bg-ctaBGContour items-center font-clashDisplay justify-center w-full bg-cover bg-no-repeat bg-sc-10 rounded-3xl">
-			<div className="p-10 flex flex-col gap-10 ">
+		<div className="flex relative bg-ctaBGContour overflow-clip items-center font-clashDisplay laptop:justify-start tablet:justify-start justify-center w-full bg-cover bg-no-repeat bg-sc-10 rounded-3xl">
+			<div className="laptop:p-16 tablet:p-10 p-8 flex flex-col gap-10 relative z-10 ">
 				<div className="flex flex-col laptop:flex-row tablet:flex-row laptop:gap-8 gap-4 laptop:p-0 tablet:p-0 pb-[32px] pt-5">
 					<HeroLocation
 						text={jumbotron.conference.date}
@@ -33,6 +35,7 @@ export default function CallToAction() {
 					variant="white"
 				/>
 			</div>
+			<Image src={BgLine} alt="call-to-action" className='h-auto w-auto absolute z-0 bottom-[-15rem] tablet:bottom-[-50%] laptop:bottom-[-1rem]  right-0' />
 		</div>
 	);
 }
