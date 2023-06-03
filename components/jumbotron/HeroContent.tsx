@@ -35,8 +35,6 @@ const HeroContent = ({ conference, buttons }: THeroContent) => {
 									text={button.text}
 									route={button.route}
 									showArrow={false}
-									bgColor={'bg-sc-0'}
-									textColor={`tc-0`}
 									otherStyles={
 										'border-[1px] border-tc-30 font-clashDisplay font-p-medium'
 									}
@@ -48,8 +46,6 @@ const HeroContent = ({ conference, buttons }: THeroContent) => {
 									text={button.text}
 									route={button.route}
 									showArrow={true}
-									bgColor={'bg-white'}
-									textColor={`sc-20`}
 									otherStyles={'font-clashDisplay font-p-semibold '}
 								/>
 						  );

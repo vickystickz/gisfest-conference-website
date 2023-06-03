@@ -93,8 +93,6 @@ const Header = () => {
 											text={button.text}
 											route={button.route}
 											showArrow={true}
-											bgColor={'bg-white'}
-											textColor={'sc-20'}
 											otherStyles={'font-p-semibold'}
 										/>
 								  )
@@ -104,8 +102,6 @@ const Header = () => {
 											text={button.text}
 											route={button.route}
 											showArrow={false}
-											bgColor={'bg-black'}
-											textColor={'white'}
 											otherStyles={'border-[1px] border-tc-30 font-p-semibold'}
 										/>
 								  );
