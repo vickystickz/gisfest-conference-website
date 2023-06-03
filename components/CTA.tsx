@@ -35,7 +35,10 @@ export default function CallToAction() {
 					variant="white"
 				/>
 			</div>
-			<Image src={BgLine} alt="call-to-action" className='h-auto w-auto absolute z-0 bottom-[-15rem] tablet:bottom-[-50%] laptop:bottom-[-1rem]  right-0' />
+			<div className='z-0 absolute bottom-[-15rem] tablet:bottom-[-50%] laptop:bottom-[-1rem]  right-0'>
+				<Image src={BgLine} alt="call-to-action" className='h-auto w-auto' />
+			</div>
+			
 		</div>
 	);
 }
