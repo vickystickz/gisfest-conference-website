@@ -43,7 +43,7 @@ const Header = () => {
 
 	return (
 		<header
-			className={`grid z-30 transition delay-200 ease-in-out ${
+			className={`grid z-30 transition delay-100 ease-in-out ${
 				isScrolled
 					? 'laptop:sticky fixed top-0 left-0 laptop:left-0 laptop:right-0 backdrop-blur-blur'
 					: null
@@ -56,7 +56,7 @@ const Header = () => {
 					<Image src={header.conferenceLogo.logo} alt="logo" />
 				</a>
 			</div>
-			<div	
+			<div
 				className={`fixed laptop:relative z-40  transition-all delay-150 ease-in-out top-0 ${
 					showMobileMenu ? 'right-0 left-0  bottom-0 z-40' : 'right-[-120%]'
 				} w-full h-screen  laptop:right-0  laptop:h-max  pt-[40%] tablet:pt-[6.5%] laptop:pt-0 laptop:gap-0 gap-24  tablet:gap-8 tablet:px-14 px-6 laptop:px-0 backdrop-blur-blur flex flex-col laptop:backdrop-blur-none laptop:col-span-10 laptop:grid-cols-12 laptop:grid`}
@@ -93,8 +93,6 @@ const Header = () => {
 											text={button.text}
 											route={button.route}
 											showArrow={true}
-											bgColor={'bg-white'}
-											textColor={'sc-20'}
 											otherStyles={'font-p-semibold'}
 										/>
 								  )
@@ -104,8 +102,6 @@ const Header = () => {
 											text={button.text}
 											route={button.route}
 											showArrow={false}
-											bgColor={'bg-black'}
-											textColor={'white'}
 											otherStyles={'border-[1px] border-tc-30 font-p-semibold'}
 										/>
 								  );

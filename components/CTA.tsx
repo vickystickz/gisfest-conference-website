@@ -32,9 +32,7 @@ export default function CallToAction() {
 					text={callToAction.button.text}
 					route={callToAction.button.route}
 					showArrow={callToAction.button.showArrow}
-					textColor="black"
-					bgColor="bg-white"
-					otherStyles="font-p-medium px-2 tablet:px-6 tablet:w-max "
+					variant="white"
 				/>
 			</div>
 			<Image src={BgLine} alt="call-to-action" className='h-auto w-auto absolute z-0 bottom-[-15rem] tablet:bottom-[-50%] laptop:bottom-[-1rem]  right-0' />

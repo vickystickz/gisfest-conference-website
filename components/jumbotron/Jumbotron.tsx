@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from '../shared/Header'
-import HeroContent from './HeroContent'
-import Image from 'next/image'
-import { siteConfiguration } from '@/config/siteConfig'
+import React from 'react';
+import HeroContent from './HeroContent';
+import Image from 'next/image';
+import { siteConfiguration } from '@/config/siteConfig';
 
 const Jumbotron = () => {
+
     const {jumbotron} = siteConfiguration
   return (
     <div className='h-screen tablet:h-[700px] z-0 left-0 right-0 transition-all delay-150 ease-out flex flex-col justify-center items-center '>
@@ -17,4 +17,4 @@ const Jumbotron = () => {
   )
 }
 
-export default Jumbotron
+export default Jumbotron;
