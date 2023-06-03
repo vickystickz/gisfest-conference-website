@@ -10,15 +10,18 @@ import { join } from 'path';
 
 
 export default function Speakers() { 
-	const { speakers, speakerDeckURL, speakerCTA } = siteConfiguration
+	const { speakers, defaultSpeakerInfo, speakerDeckURL, speakerCTA } = siteConfiguration
 
 	return (
         <div className="flex flex-col gap-y-10 ">
             <SectionHeader
                 title="Speakers"
                 layout='text-center' />
-            <div className="grid grid-flow-row grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-10 tv:grid-cols-4">
-                {speakers.map((speaker, id) => (
+            <div className="grid grid-flow-row grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-10 tv:grid-cols-4">
+                {speakers.length === 1 ?
+                    defaultSpeakerInfo.map((speaker, id) => (
+                    <ConferenceSpeakers key={`speaker-${id}`} speaker={speaker} />
+                )): speakers.map((speaker, id) => (
                     <ConferenceSpeakers key={`speaker-${id}`} speaker={speaker} />
                 ))}
             </div>

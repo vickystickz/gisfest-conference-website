@@ -28,11 +28,11 @@ export default function Sponsors() {
 						together.
 					</h1>
 				</div>
-				<div className="flex justify-start tablet:justify-end tablet:basis:1/2 laptop:basis-2/3 tablet:self-center   p-2 tablet:p-4">
+				<div className="flex justify-start tablet:justify-end tablet:basis:1/2 laptop:basis-2/3 tablet:self-center max-w-full tablet:p-4">
 					<Link
 						href={sponsorshipDeckURL}
 						title="Download sponsorship deck"
-						className="py-[14px] px-6 tablet:p-4 laptop:text-h5 tablet:text-h5 font-clashDisplay text-body whitespace-nowrap text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
+						className="py-[14px] laptop:px-6 px-3 tablet:p-4 laptop:text-h5 tablet:text-h5 font-clashDisplay text-body whitespace-nowrap text-center hover:bg-tc-30 font-p-medium border border-tc-30 rounded-lg text-tc-0"
 					>
 						Download sponsorship deck
 					</Link>

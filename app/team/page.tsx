@@ -8,9 +8,9 @@ const TeamPage = () => {
     <div className='w-full'>
       <Header/> 
       <div className='relative w-full'>
-        <Image src={bgIsolation} alt='bg-isolation' className='h-auto w-auto absolute laptop:left-[-30%] tablet:left-[-30%] left-0  top-0' />
+        <Image src={bgIsolation} alt='bg-isolation' className='h-auto w-auto absolute z-0 laptop:left-0 left-0  top-[-30%]' />
       </div>
-      <div className='mx-auto max-w-screen-tv laptop:px-24 tablet:px-14 laptop:space-y-[107px] space-y-[57px] px-3'>
+      <div className='mx-auto max-w-screen-tv laptop:px-20 tablet:px-14 laptop:space-y-[107px] space-y-[57px] px-3'>
          <Team />
       </div>
       
