@@ -1,5 +1,7 @@
 import '@/styles/globals.css';
 import { Montserrat } from 'next/font/google';
+import type { Metadata } from 'next';
+import Header from '@/components/shared/Header';
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -12,21 +14,23 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
+	//the header is transparent on the homepage and it doesn't render well on other pages
+	//we can control this by changing the background color based on the current route
+
 	return (
 		<html
 			lang="en"
 			className={`${montserrat.variable} font-sans scroll-smooth`}
 		>
 			<body>
-				<Header />
-				<main className="bg-sc-0  min-h-screen">{children}</main>
+				<main className="bg-sc-0  min-h-screen">
+					<Header />
+					{children}
+				</main>
 			</body>
 		</html>
 	);
 }
-
-import type { Metadata } from 'next';
-import Header from '@/components/shared/Header';
 
 export const metadata: Metadata = {
 	title: 'GISfestival 2023 Conference ',
