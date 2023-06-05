@@ -16,40 +16,38 @@ export default function Home() {
 	const { showAgenda } = siteConfiguration;
 	return (
 		<>
-			<div className="wrapper">
-				<Jumbotron />
-				<section id="#conferenceType">
-					<ConferenceType />
-				</section>
-				<section id="#about">
-					<About />
-				</section>
-				<section id="#takeaway">
-					<TakeAway />
-				</section>
-				<section id="#faq">
-					<FAQ />
-				</section>
-			</div>
+			<Jumbotron />
+			<section id="#conferenceType">
+				<ConferenceType />
+			</section>
+			<section id="#about">
+				<About />
+			</section>
+			<section id="#takeaway">
+				<TakeAway />
+			</section>
+			<section id="#faq">
+				<FAQ />
+			</section>
+
 			<MarqueeText />
-			<div className="wrapper">
-				<section id="#sponsors">
-					<Sponsors />
+
+			<section id="#sponsors">
+				<Sponsors />
+			</section>
+			<section id="#speakers">
+				<Speakers />
+			</section>
+			{showAgenda ? (
+				<section id="#agenda">
+					<Agenda />
 				</section>
-				<section id="#speakers">
-					<Speakers />
-				</section>
-				{showAgenda ? (
-					<section id="#agenda">
-						<Agenda />
-					</section>
-				) : null}
-				<SpatialPeople />
-				<section id="#venue">
-					<Venue />
-				</section>
-				<CallToAction />
-			</div>
+			) : null}
+			<SpatialPeople />
+			<section id="#venue">
+				<Venue />
+			</section>
+			<CallToAction />
 		</>
 	);
 }
