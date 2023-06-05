@@ -12,11 +12,9 @@ import {
 } from '@/config/types';
 import LogoWhite from '@/public/assets/logos/logo-white.svg';
 
-//Team members pictures
-
 const sponsorshipDeck =
 	'https://drive.google.com/file/d/1pIW3-Bf6lW0HXjwWxMalfQq5otFXKekc/view';
-const speakerDeck = 'https://downloadurl.com';
+const speakerDeck = '/cfs';
 const speakerCTA = 'Join our Speakers';
 export const siteConfiguration: TSiteConfiguration = {
 	/********  homePage  ***********/
@@ -625,4 +623,15 @@ export const siteConfiguration: TSiteConfiguration = {
 			sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 		},
 	],
+
+	callForSpeakers: {
+		timeline: {
+			callOpen: '23 May 2023',
+			callClose: '25 September, 2023',
+		},
+		sessionSubmissionButton: {
+			text: 'Submit a session',
+			route: '',
+		},
+	},
 };

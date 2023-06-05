@@ -14,19 +14,14 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	//the header is transparent on the homepage and it doesn't render well on other pages
-	//we can control this by changing the background color based on the current route
-
 	return (
 		<html
 			lang="en"
-			className={`${montserrat.variable} font-sans scroll-smooth`}
+			className={`${montserrat.variable} bg-sc-0 font-sans scroll-smooth`}
 		>
 			<body>
-				<main className="bg-sc-0  min-h-screen">
-					<Header />
-					{children}
-				</main>
+				<Header />
+				<main className="wrapper">{children}</main>
 			</body>
 		</html>
 	);

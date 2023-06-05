@@ -3,7 +3,10 @@ const nextConfig = {
 	reactStrictMode: true,
 	experimental: {
 		appDir: true,
+		mdxRs: true,
 	},
 };
 
-module.exports = nextConfig;
+//ref-https://nextjs.org/docs/app/building-your-application/configuring/mdx
+const withMDX = require('@next/mdx')();
+module.exports = withMDX(nextConfig);
