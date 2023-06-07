@@ -17,6 +17,17 @@ type TCallToAction = {
 		showArrow: boolean;
 	};
 };
+
+type TCallForSpeakers = {
+	timeline: {
+		callOpen: string;
+		callClose: string;
+	};
+	sessionSubmissionButton: {
+		text: string;
+		route: string;
+	};
+};
 export type TSiteConfiguration = {
 	header: THeader['header'];
 	conferenceType: TConferenceType;
@@ -35,9 +46,10 @@ export type TSiteConfiguration = {
 	callToAction: TCallToAction;
 	showAgenda: boolean;
 	defaultSpeakerInfo: TConferenceSpeaker['speaker'][];
-	speakers: TConferenceSpeaker['speaker'][],
+	speakers: TConferenceSpeaker['speaker'][];
 	speakerDeckURL: string;
 	speakerCTA: string;
+	callForSpeakers: TCallForSpeakers;
 };
 
 export interface TSVGProps extends SVGProps<SVGSVGElement> {
@@ -159,11 +171,10 @@ export type conference = {
 };
 
 export type TJumbotron = {
-	heroImage: StaticImageData,
-	conference: conference,
-	heroButtons: navigationLinks[]
-
-}
+	heroImage: StaticImageData;
+	conference: conference;
+	heroButtons: navigationLinks[];
+};
 
 export type TConferenceSpeaker = {
 	speaker: {
@@ -172,7 +183,5 @@ export type TConferenceSpeaker = {
 		avatar: string;
 		company: string;
 		sociallink: string;
-
 	};
-
 };

@@ -1,7 +1,6 @@
 'use client';
 
 import NotFoundIcon from '@/components/icons/NotFoundIcon';
-import ServerErrorIcon from '@/components/icons/ServerErrorIcon';
 import Button from '@/components/shared/Button';
 
 export default function NotFound() {
