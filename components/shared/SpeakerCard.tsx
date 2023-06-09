@@ -13,8 +13,7 @@ const SpeakerCard = ({ speaker }: TConferenceSpeaker) => {
 						src={speaker.avatar}
 						alt={speaker.name}
 						fill
-						// placeholder="blur" - Please uncomment after changing the team image to png/jpeg @vikkystickz
-						className="object-cover rounded-tl-[240px] rounded-br-[240px] rounded-bl-[240px] rounded-tr-2xl w-full h-full transition-transform duration-300 hover:scale-125"
+						className="object-cover rounded-tl-[240px] rounded-br-[240px] rounded-bl-[240px] rounded-tr-2xl w-auto h-auto transition-transform duration-300 hover:scale-125"
 					/>
 				</div>
 				{speaker.sociallink && (

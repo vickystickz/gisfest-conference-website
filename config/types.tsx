@@ -97,9 +97,10 @@ export type TSponsorCard = {
 };
 
 export enum AgendaCategory {
-	workshop = 'workshop',
+	workshop = 'Workshop',
 	panelSession = 'Panel Session',
 	Keynote = 'Keynote',
+	network = 'Network',
 }
 export enum TeamCategory {
 	Organizing = 'Organizing',
@@ -108,11 +109,16 @@ export enum TeamCategory {
 
 export type TAgendaCard = {
 	category?: AgendaCategory;
+	id: number;
 	time: string;
-
 	title: string;
+	abstract?: string;
 	speakers?: {
 		name: string;
+	    role: string;
+		avatar: string,
+		company: string,
+		sociallink: string,
 	}[];
 };
 
@@ -185,3 +191,8 @@ export type TConferenceSpeaker = {
 		sociallink: string;
 	};
 };
+
+export type tag = {
+	title: string;
+	style: string;
+}

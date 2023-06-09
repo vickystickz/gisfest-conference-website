@@ -59,7 +59,7 @@ const Header = () => {
 			<div
 				className={`fixed laptop:relative z-40  transition-all delay-150 ease-in-out top-0 ${
 					showMobileMenu ? 'right-0 left-0  bottom-0 z-40' : 'right-[-120%]'
-				} w-full h-screen  laptop:right-0  laptop:h-max  pt-[40%] tablet:pt-[6.5%] laptop:pt-0 laptop:gap-0 gap-24  tablet:gap-8 tablet:px-14 px-6 laptop:px-0 backdrop-blur-blur flex flex-col laptop:backdrop-blur-none laptop:col-span-10 laptop:grid-cols-12 laptop:grid`}
+				} w-full h-screen  laptop:right-0  laptop:h-max  pt-[40%] tablet:pt-[6.5%] laptop:pt-0 laptop:gap-0 gap-24 items-center tablet:gap-8 tablet:px-14 px-6 laptop:px-0 backdrop-blur-blur flex flex-col laptop:backdrop-blur-none laptop:col-span-10 laptop:grid-cols-12 laptop:grid`}
 			>
 				<div className="col-span-6 w-full tablet:h-[40%] laptop:flex tablet:justify-end laptop:justify-end">
 					<ul className="w-full flex h-full flex-col gap-9 tablet:gap-2  laptop:gap-0  laptop:flex-row justify-end items-center">

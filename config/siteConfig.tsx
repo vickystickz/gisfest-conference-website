@@ -209,7 +209,7 @@ export const siteConfiguration: TSiteConfiguration = {
 		},
 	],
 
-	showAgenda: false,
+	showAgenda: true,
 	// Agenda
 	agenda: [
 		{
@@ -219,54 +219,89 @@ export const siteConfiguration: TSiteConfiguration = {
 			date: '10 Nov.2023',
 			agenda: [
 				{
+					id: 101,
 					time: '10:00am',
-					title: 'Opening Session',
+					category: AgendaCategory.workshop,
+					title: 'Creating community, empowering underrepresented geospatial professionals at Women in Geospatial',
+					abstract: "Lorem ipsum dolor sit amet consectetur. Porttitor pellentesque a ac tortor amet pretium. Gravida amet felis enim sapien cras sed lacinia. Morbi ac volutpat neque viverra urna. Ac nisl curabitur eu suspendisse elit. Non at sollicitudin malesuada ut proin. In quis enim ipsum nulla nibh et sed ultrices. Fusce augue in molestie blandit commodo volutpat netus. Nam eget pulvinar mattis nulla arcu ut. Cursus proin purus sed pretium. Maecenas diam mi euismod odio vestibulum iaculis non mattis. Ac sit netus eget pellentesque in vivamus at feugiat. Pellentesque id ut dapibus viverra adipiscing venenatis mattis. Ullamcorper tellus pellentesque porttitor pellentesque maecenas enim. Sodales facilisi et venenatis sagittis pharetra convallis.",
 					speakers: [
 						{
-							name: 'Cemeron Williamson',
+							name: 'Cameron Williamson',
+							role: 'Product Evanlegist',
+							avatar: '/assets/images/defaultSpeaker.svg',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 					],
 				},
 				{
+					id: 102,
 					category: AgendaCategory.Keynote,
 					time: '00:00am',
 					title: 'Opening Session',
+					abstract: "Lorem ipsum dolor sit amet consectetur. Porttitor pellentesque a ac tortor amet pretium. Gravida amet felis enim sapien cras sed lacinia. Morbi ac volutpat neque viverra urna. Ac nisl curabitur eu suspendisse elit. Non at sollicitudin malesuada ut proin. In quis enim ipsum nulla nibh et sed ultrices. Fusce augue in molestie blandit commodo volutpat netus. Nam eget pulvinar mattis nulla arcu ut. Cursus proin purus sed pretium. Maecenas diam mi euismod odio vestibulum iaculis non mattis. Ac sit netus eget pellentesque in vivamus at feugiat. Pellentesque id ut dapibus viverra adipiscing venenatis mattis. Ullamcorper tellus pellentesque porttitor pellentesque maecenas enim. Sodales facilisi et venenatis sagittis pharetra convallis.",
 					speakers: [
 						{
-							name: 'Ronald Richards',
+							name: 'GISfest2023 Team',
+							role: 'Organizers',
+							avatar: '/assets/images/defaultSpeaker.svg',
+							company: 'GISfest2023',
+							sociallink: '',
 						},
 					],
 				},
 				{
+					id: 103,
 					category: AgendaCategory.workshop,
 					time: '10:00am',
-					title:
-						'Creating community, empowering underrepresented geospatial professionals at Women in Geospatial',
+					title:'Web GIS: An Introduction to ArcGIS Online and ArcGIS Enterprise',
+					abstract: "Lorem ipsum dolor sit amet consectetur. Porttitor pellentesque a ac tortor amet pretium. Gravida amet felis enim sapien cras sed lacinia. Morbi ac volutpat neque viverra urna. Ac nisl curabitur eu suspendisse elit. Non at sollicitudin malesuada ut proin. In quis enim ipsum nulla nibh et sed ultrices. Fusce augue in molestie blandit commodo volutpat netus. Nam eget pulvinar mattis nulla arcu ut. Cursus proin purus sed pretium. Maecenas diam mi euismod odio vestibulum iaculis non mattis. Ac sit netus eget pellentesque in vivamus at feugiat. Pellentesque id ut dapibus viverra adipiscing venenatis mattis. Ullamcorper tellus pellentesque porttitor pellentesque maecenas enim. Sodales facilisi et venenatis sagittis pharetra convallis.",
 					speakers: [
 						{
 							name: 'Darrell Steward',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 					],
 				},
 				{
-					category: AgendaCategory.panelSession,
+					id: 104,
+					category: AgendaCategory.workshop,
 					time: '10:00am',
-					title: 'AI and GIS',
+					title: 'Participatory mapping',
+					abstract: "Lorem ipsum dolor sit amet consectetur. Porttitor pellentesque a ac tortor amet pretium. Gravida amet felis enim sapien cras sed lacinia. Morbi ac volutpat neque viverra urna. Ac nisl curabitur eu suspendisse elit. Non at sollicitudin malesuada ut proin. In quis enim ipsum nulla nibh et sed ultrices. Fusce augue in molestie blandit commodo volutpat netus. Nam eget pulvinar mattis nulla arcu ut. Cursus proin purus sed pretium. Maecenas diam mi euismod odio vestibulum iaculis non mattis. Ac sit netus eget pellentesque in vivamus at feugiat. Pellentesque id ut dapibus viverra adipiscing venenatis mattis. Ullamcorper tellus pellentesque porttitor pellentesque maecenas enim. Sodales facilisi et venenatis sagittis pharetra convallis.",
 					speakers: [
 						{
 							name: 'Darrell Steward',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 						{
 							name: 'Saannah Nguyen',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 						{
 							name: 'Blessie Cooper',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 					],
 				},
 				{
+					id: 105,
 					time: '10:00am',
 					title: 'Networking ',
+					category: AgendaCategory.network,
+					
 				},
 			],
 		},
@@ -277,150 +312,72 @@ export const siteConfiguration: TSiteConfiguration = {
 			date: '11 Nov.2023',
 			agenda: [
 				{
+					id: 201,
+					category: AgendaCategory.panelSession,
 					time: '12:00am',
-					title: 'Opening Session',
+					title: 'Geospatial AI',
+					abstract: "Lorem ipsum dolor sit amet consectetur. Porttitor pellentesque a ac tortor amet pretium. Gravida amet felis enim sapien cras sed lacinia. Morbi ac volutpat neque viverra urna. Ac nisl curabitur eu suspendisse elit. Non at sollicitudin malesuada ut proin. In quis enim ipsum nulla nibh et sed ultrices. Fusce augue in molestie blandit commodo volutpat netus. Nam eget pulvinar mattis nulla arcu ut. Cursus proin purus sed pretium. Maecenas diam mi euismod odio vestibulum iaculis non mattis. Ac sit netus eget pellentesque in vivamus at feugiat. Pellentesque id ut dapibus viverra adipiscing venenatis mattis. Ullamcorper tellus pellentesque porttitor pellentesque maecenas enim. Sodales facilisi et venenatis sagittis pharetra convallis.",
 					speakers: [
 						{
 							name: 'Cemeron Williamson',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 					],
 				},
 				{
-					category: AgendaCategory.Keynote,
-					time: '00:00am',
-					title: 'Opening Session',
-					speakers: [
-						{
-							name: 'Ronald Richards',
-						},
-					],
-				},
-				{
+					id: 202,
 					category: AgendaCategory.workshop,
 					time: '10:00am',
 					title:
-						'Creating community, empowering underrepresented geospatial professionals at Women in Geospatial',
+						'Empowering underrepresented geospatial professionals at Women in Geospatial',
 					speakers: [
 						{
 							name: 'Darrell Steward',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 					],
 				},
 				{
+					id: 203,
 					category: AgendaCategory.panelSession,
 					time: '10:00am',
 					title: 'AI and GIS',
+					abstract: "Lorem ipsum dolor sit amet consectetur. Porttitor pellentesque a ac tortor amet pretium. Gravida amet felis enim sapien cras sed lacinia. Morbi ac volutpat neque viverra urna. Ac nisl curabitur eu suspendisse elit. Non at sollicitudin malesuada ut proin. In quis enim ipsum nulla nibh et sed ultrices. Fusce augue in molestie blandit commodo volutpat netus. Nam eget pulvinar mattis nulla arcu ut. Cursus proin purus sed pretium. Maecenas diam mi euismod odio vestibulum iaculis non mattis. Ac sit netus eget pellentesque in vivamus at feugiat. Pellentesque id ut dapibus viverra adipiscing venenatis mattis. Ullamcorper tellus pellentesque porttitor pellentesque maecenas enim. Sodales facilisi et venenatis sagittis pharetra convallis.",
 					speakers: [
 						{
 							name: 'Darrell Steward',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 						{
 							name: 'Saannah Nguyen',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 						{
 							name: 'Blessie Cooper',
+							role: 'Product Evanlegist',
+							avatar: '',
+							company: 'Dealcode',
+							sociallink: 'https://www.linkedin.com/in/oluwatobi-akinpelu-0b1b3b1b0/',
 						},
 					],
 				},
 				{
-					category: AgendaCategory.panelSession,
+					id: 204,
+					category: AgendaCategory.network,
 					time: '10:00am',
-					title: 'AI and GIS',
-					speakers: [
-						{
-							name: 'Darrell Steward',
-						},
-						{
-							name: 'Saannah Nguyen',
-						},
-						{
-							name: 'Blessie Cooper',
-						},
-					],
-				},
-				{
-					category: AgendaCategory.panelSession,
-					time: '10:00am',
-					title: 'AI and GIS',
-					speakers: [
-						{
-							name: 'Darrell Steward',
-						},
-						{
-							name: 'Saannah Nguyen',
-						},
-						{
-							name: 'Blessie Cooper',
-						},
-					],
-				},
-				{
-					category: AgendaCategory.panelSession,
-					time: '10:00am',
-					title: 'AI and GIS',
-					speakers: [
-						{
-							name: 'Darrell Steward',
-						},
-						{
-							name: 'Saannah Nguyen',
-						},
-						{
-							name: 'Blessie Cooper',
-						},
-					],
-				},
-				{
-					category: AgendaCategory.panelSession,
-					time: '10:00am',
-					title: 'AI and GIS',
-					speakers: [
-						{
-							name: 'Darrell Steward',
-						},
-						{
-							name: 'Saannah Nguyen',
-						},
-						{
-							name: 'Blessie Cooper',
-						},
-					],
-				},
-				{
-					category: AgendaCategory.panelSession,
-					time: '10:00am',
-					title: 'AI and GIS',
-					speakers: [
-						{
-							name: 'Darrell Steward',
-						},
-						{
-							name: 'Saannah Nguyen',
-						},
-						{
-							name: 'Blessie Cooper',
-						},
-					],
-				},
-				{
-					category: AgendaCategory.panelSession,
-					time: '10:00am',
-					title: 'AI and GIS',
-					speakers: [
-						{
-							name: 'Darrell Steward',
-						},
-						{
-							name: 'Saannah Nguyen',
-						},
-						{
-							name: 'Blessie Cooper',
-						},
-					],
-				},
-				{
-					time: '10:00am',
-					title: 'Networking ',
+					title: 'Networking',
 				},
 			],
 		},
@@ -469,7 +426,7 @@ export const siteConfiguration: TSiteConfiguration = {
 					fullName: 'Mercy Akintola',
 					twitter: '@mercyakintola',
 					linkedIn: 'https://www.linkedin.com/in/mercyakintola/',
-					teamName: 'Logistics',
+					teamName: 'Logistics (Lead)',
 					avatar: '/assets/images/team/mercy-akintola.jpg',
 				},
 				{
@@ -545,7 +502,7 @@ export const siteConfiguration: TSiteConfiguration = {
 	],
 
 	callToAction: {
-		largeText: 'Ready to make history together?',
+		largeText: 'Ready to make history together?',	
 		ctaText: 'Become a Sponsor!',
 		button: {
 			text: 'Sponsorship Deck',

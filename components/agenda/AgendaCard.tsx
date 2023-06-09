@@ -1,9 +1,13 @@
 import { AgendaCategory, TAgendaCard } from '@/config/types';
+import Tag from '../shared/Tag';
+import Link from 'next/link';
+
 
 type ExtendedAgendaCard = { selectedTimezone: string; agenda: TAgendaCard };
 const AgendaCard = ({ selectedTimezone, agenda }: ExtendedAgendaCard) => {
 	return (
 		<div className=" col-span-1 odd:border-gradient rounded-3xl p-[0.1rem]">
+			<Link href={`agenda/${agenda.id}`} >
 			<div className="bg-sc-20  rounded-3xl space-y-2 p-3 laptop:p-6 cursor-pointer ">
 				<p className="text-tc-10 text-body-sm tablet:text-body font-p-medium">
 					{agenda.time}
@@ -25,28 +29,13 @@ const AgendaCard = ({ selectedTimezone, agenda }: ExtendedAgendaCard) => {
 								</p>
 							))}
 						</div>
-						<p
-							className={` p-2 ${getAgendaCategoryStyle(
-								agenda?.category
-							)} self-end rounded-xl whitespace-nowrap text-body-sm text-sc-10 font-p-medium tag-padding`}
-						>
-							{agenda.category}
-						</p>
+						<Tag category={agenda.category} day={undefined}/>
 					</div>
 				</div>
 			</div>
+			</Link>
 		</div>
 	);
 };
 
 export default AgendaCard;
-
-function getAgendaCategoryStyle(category?: AgendaCategory) {
-	if (category === AgendaCategory.workshop) {
-		return 'bg-yellow-20';
-	} else if (category === AgendaCategory.Keynote) {
-		return 'bg-red-20';
-	} else if (category === AgendaCategory.panelSession) {
-		return 'bg-green-20';
-	}
-}

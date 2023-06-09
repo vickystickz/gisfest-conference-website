@@ -19,7 +19,7 @@ export default function RootLayout({
 			lang="en"
 			className={`${montserrat.variable} bg-sc-0 font-sans scroll-smooth`}
 		>
-			<body>
+			<body className='laptop:relative'>
 				<Header />
 				<main className="wrapper">{children}</main>
 			</body>
