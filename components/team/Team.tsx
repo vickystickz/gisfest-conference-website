@@ -2,11 +2,12 @@ import React from 'react';
 import SectionHeader from '../shared/SectionHeader';
 import { siteConfiguration } from '@/config/siteConfig';
 import SpeakerCard from '../shared/SpeakerCard';
+import { AgendaCategory } from '@/config/types';
 
 const Team = () => {
 	const { teams, teamDescription } = siteConfiguration;
 	return (
-		<div className="laptop:px-20 tablet:px-4 px-0 space-y-[80px] z-20 relative">
+		<div className="laptop:px-6 tablet:px-4 px-0 space-y-[80px] z-20 relative">
 			<div className="laptop:w-[88%] laptop:mx-auto tablet:px-16 px-0 py-20 pt-32">
 				<SectionHeader title="Team" layout="text-start font-clashDisplay" />
 				<div className="flex flex-col gap-6">
